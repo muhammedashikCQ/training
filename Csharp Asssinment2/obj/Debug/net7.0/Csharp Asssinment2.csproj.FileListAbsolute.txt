@@ -1,0 +1,15 @@
+C:\NewRepo\Csharp Asssinment2\bin\Debug\net7.0\Csharp Asssinment2.exe
+C:\NewRepo\Csharp Asssinment2\bin\Debug\net7.0\Csharp Asssinment2.deps.json
+C:\NewRepo\Csharp Asssinment2\bin\Debug\net7.0\Csharp Asssinment2.runtimeconfig.json
+C:\NewRepo\Csharp Asssinment2\bin\Debug\net7.0\Csharp Asssinment2.dll
+C:\NewRepo\Csharp Asssinment2\bin\Debug\net7.0\Csharp Asssinment2.pdb
+C:\NewRepo\Csharp Asssinment2\obj\Debug\net7.0\Csharp Asssinment2.csproj.AssemblyReference.cache
+C:\NewRepo\Csharp Asssinment2\obj\Debug\net7.0\Csharp Asssinment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\NewRepo\Csharp Asssinment2\obj\Debug\net7.0\Csharp Asssinment2.AssemblyInfoInputs.cache
+C:\NewRepo\Csharp Asssinment2\obj\Debug\net7.0\Csharp Asssinment2.AssemblyInfo.cs
+C:\NewRepo\Csharp Asssinment2\obj\Debug\net7.0\Csharp Asssinment2.csproj.CoreCompileInputs.cache
+C:\NewRepo\Csharp Asssinment2\obj\Debug\net7.0\Csharp Asssinment2.dll
+C:\NewRepo\Csharp Asssinment2\obj\Debug\net7.0\refint\Csharp Asssinment2.dll
+C:\NewRepo\Csharp Asssinment2\obj\Debug\net7.0\Csharp Asssinment2.pdb
+C:\NewRepo\Csharp Asssinment2\obj\Debug\net7.0\Csharp Asssinment2.genruntimeconfig.cache
+C:\NewRepo\Csharp Asssinment2\obj\Debug\net7.0\ref\Csharp Asssinment2.dll
