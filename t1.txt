@@ -1,0 +1,26 @@
+CREATE TABLE Student1(student_id INT IDENTITY PRIMARY KEY,Student_name VARCHAR(50),Marks Int);
+INSERT INTO Student1 VALUES
+('Ashik',25),
+(' James',35),
+('john',NULL),
+(' clarissa',NULL),
+('Kiler',15),
+(' nimz',10);
+SELECT *,
+CASE WHEN Marks<25 OR Marks IS NULL THEN 'Failed'
+ELSE 'Pass'
+END AS Status 
+FROM Student1;
+
+SELECT *,
+CASE WHEN Marks IS NULL THEN 'Failed'
+ELSE 'Pass'
+END AS Status 
+FROM Student1;
+
+CREATE TABLE Student2(student_id INT IDENTITY PRIMARY KEY,Student_name VARCHAR(MAX),Marks Int);
+INSERT INTO Student2 VALUES
+('Ashik',23),
+('James',34),
+('john',56);
+INSERT INTO Student2 VALUES('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',23);
