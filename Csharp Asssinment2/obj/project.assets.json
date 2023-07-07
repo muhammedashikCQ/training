@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\NewRepo\\Csharp Asssinment2\\Csharp Asssinment2.csproj",
+      "projectUniqueName": "C:\\Repository\\training\\Csharp Asssinment2\\Csharp Asssinment2.csproj",
       "projectName": "Csharp Asssinment2",
-      "projectPath": "C:\\NewRepo\\Csharp Asssinment2\\Csharp Asssinment2.csproj",
+      "projectPath": "C:\\Repository\\training\\Csharp Asssinment2\\Csharp Asssinment2.csproj",
       "packagesPath": "C:\\Users\\CQ-Ashik\\.nuget\\packages\\",
-      "outputPath": "C:\\NewRepo\\Csharp Asssinment2\\obj\\",
+      "outputPath": "C:\\Repository\\training\\Csharp Asssinment2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CQ-Ashik\\AppData\\Roaming\\NuGet\\NuGet.Config",
