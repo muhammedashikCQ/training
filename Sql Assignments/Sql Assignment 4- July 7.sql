@@ -45,7 +45,7 @@ INSERT INTO Books VALUES
 ('Gulliver','2023-07-05'),
 (' claara','2023-12-07');
 DECLARE @maxValue INT;
-SELECT @maxValue = MAX(YEAR(date1)) FROM Books;
+SELECT @maxValue =YEAR(GETDATE());
 SELECT COUNT(book_name) AS Books_last_year FROM Books WHERE YEAR(date1)=@maxValue-1;
 SELECT COUNT(book_name) AS Books_last_year_Mondays FROM Books WHERE YEAR(date1)=@maxValue-1 AND DATEPART(weekday,date1)=2;
 
