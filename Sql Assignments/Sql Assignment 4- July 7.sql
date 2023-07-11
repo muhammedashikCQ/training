@@ -54,7 +54,6 @@ SELECT COUNT(book_name) AS Books_last_year_Mondays FROM Books WHERE YEAR(date1)=
 CREATE TABLE Employee2(employee_id INT IDENTITY PRIMARY KEY,employee_name VARCHAR(MAX),place VARCHAR(MAX),date_of_joining DATE);
 INSERT INTO Employee2 VALUES('Ashik','Trivandrum','2023-07-03'),('james','Kochi','2023-07-03'),('jose','calicut','2023-06-25'),('akhil','Kochi','2023-06-25'),('jose','calicut','2023-07-01'),('hali','Kochi','2023-07-25'),('joli','calicut','2023-07-26');
 SELECT * FROM Employee2;
-SELECT COUNT(DISTINCT date_of_joining) AS total_joining_days
-FROM Employee;
+SELECT COUNT(DISTINCT date_of_joining) AS total_joining_days FROM Employee;
 
 
