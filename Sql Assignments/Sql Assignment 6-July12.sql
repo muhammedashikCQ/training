@@ -3,6 +3,7 @@
 SELECT * FROM SalesLT.SalesOrderHeader;
 SELECT * FROM SalesLT.Customer AS C WHERE C.CompanyName='Racing Socks'
 SELECT * FROM SalesLT.Product;
+SELECT * FROM SalesLT.SalesOrderDetail;
 ------
 
 --1.Show the CompanyName for James D. Kramer
@@ -51,18 +52,16 @@ WHERE A.City='Dallas';
 
 ---6.How many items with ListPrice more than $1000 have been sold?
 
---SELECT SUM(SOD.OrderQty) Total
---FROM SalesLT.Product AS P
---INNER JOIN SalesLT.SalesOrderDetail AS SOD 
---	ON SOD.ProductID = P.ProductID 
---WHERE P.ListPrice >1000;
-
-SELECT (P.ProductID)
-FROM SalesLT.SalesOrderDetail 
-AS SOD 
-INNER JOIN SalesLT.Product AS P 
+SELECT COUNT( DISTINCT SOD.ProductID)
+FROM  SalesLT.Product 
+AS P 
+INNER JOIN SalesLT.SalesOrderDetail
+AS SOD
 ON P.ProductID=SOD.ProductID 
 WHERE P.ListPrice>1000;
+
+SELECT * FROM SalesLT.Product;
+SELECT * FROM SalesLT.SalesOrderDetail;
 
 --7)Give the CompanyName of those customers with orders over $100000. Include the subtotal plus tax plus freight.
 
@@ -96,11 +95,8 @@ WHERE C.CompanyName='Riding Cycles' AND P.Name='Racing Socks, L';
 --Show the SalesOrderID and the UnitPrice for every Single Item Order.
 
 
-SELECT  DISTINCT SOD.SalesOrderID
-FROM 
-SalesLT.SalesOrderDetail 
-AS SOD WHERE SOD.OrderQty=1;
 
+SELECT * FROM SalesLT.SalesOrderDetail;
 
 --10.)Show the product description for culture ‘fr’ for product with ProductID 736.
 
