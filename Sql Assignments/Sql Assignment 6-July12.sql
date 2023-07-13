@@ -95,6 +95,20 @@ WHERE C.CompanyName='Riding Cycles' AND P.Name='Racing Socks, L';
 --Show the SalesOrderID and the UnitPrice for every Single Item Order.
 
 
+--SELECT SOD.SalesOrderID
+--FROM SalesLT.SalesOrderDetail 
+--AS SOD 
+--GROUP BY(SOD.SalesOrderID)
+--HAVING COUNT(*)=1;
+
+SELECT SOD.SalesOrderID,SOD.UnitPrice 
+FROM SalesLT.SalesOrderDetail AS SOD  
+WHERE SalesOrderID IN(
+SELECT  SOD.SalesOrderID
+FROM SalesLT.SalesOrderDetail AS SOD
+GROUP BY (SOD.SalesOrderID) HAVING COUNT(*)=1);
+
+
 
 SELECT * FROM SalesLT.SalesOrderDetail;
 
