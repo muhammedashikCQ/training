@@ -76,7 +76,7 @@ WHERE (SOH.SubTotal+ SOH.TaxAmt+SOH.Freight)>10000;
 
 --8)Find the number of left racing socks ('Racing Socks, L') ordered by CompanyName 'Riding Cycles'
 
-SELECT COUNT(P.Name)
+SELECT SUM(SOD.OrderQty)
 FROM SalesLT.Customer
 AS C 
 INNER JOIN SalesLT.SalesOrderHeader 
