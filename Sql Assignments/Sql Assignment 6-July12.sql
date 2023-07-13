@@ -57,7 +57,7 @@ WHERE A.City='Dallas';
 --	ON SOD.ProductID = P.ProductID 
 --WHERE P.ListPrice >1000;
 
-SELECT DISTINCT COUNT(P.ProductID)
+SELECT (P.ProductID)
 FROM SalesLT.SalesOrderDetail 
 AS SOD 
 INNER JOIN SalesLT.Product AS P 
