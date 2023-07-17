@@ -163,7 +163,7 @@ ORDER BY OrderTimes DESC;
 
 
 
-SELECT TOP 1 P.[Name],P.[ProductID],A.City,
+SELECT TOP 1 A.City,
 SUM(SOD.OrderQty*(P.ListPrice-P.StandardCost))
 AS [Profit]
 FROM
@@ -185,9 +185,8 @@ ON CA.CustomerID=C.CustomerID
 INNER JOIN SalesLT.Address
 AS A
 ON A.AddressID=CA.AddressID
-GROUP BY P.ProductID,P.[Name],A.City
+GROUP BY A.City
 ORDER BY [PROFIT] DESC
-
 
 
 
