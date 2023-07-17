@@ -139,15 +139,12 @@ ORDER BY [Profit] DESC;
 
   --a) most no of order
 
-SELECT TOP 1 SOD.SalesOrderID,A.City,
-COUNT(SOD.SalesOrderID)
+SELECT TOP 1 A.City,
+COUNT(SOH.SalesOrderID)
 AS OrderTimes
 FROM
-SalesLT.SalesOrderDetail
-AS SOD
-LEFT JOIN SalesLT.SalesOrderHeader
+SalesLT.SalesOrderHeader
 AS SOH
-ON SOH.SalesOrderID=SOD.SalesOrderID
 INNER JOIN SalesLT.Customer
 AS C
 ON C.CustomerID=SOH.CustomerID
@@ -157,8 +154,9 @@ ON CA.CustomerID=C.CustomerID
 INNER JOIN SalesLT.Address
 AS A
 ON A.AddressID=CA.AddressID
-GROUP BY SOD.SalesOrderID,A.City
+GROUP BY A.City
 ORDER BY OrderTimes DESC;
+
 
 
 --b) most profitable city
@@ -196,20 +194,12 @@ ORDER BY [PROFIT] DESC
 
 --c) which hasn't placed any orders
 
-SELECT C.CustomerID,A.City
-FROM SalesLT.[SalesOrderDetail]
-AS SOD
-INNER JOIN SalesLT.SalesOrderHeader
-AS SOH
-ON SOH.SalesOrderID=SOD.SalesOrderID
-RIGHT JOIN SalesLT.Customer
-AS C
-ON C.CustomerID=SOH.CustomerID
-INNER JOIN SalesLT.CustomerAddress
-AS CA
-ON CA.CustomerID=C.CustomerID
-INNER JOIN SalesLT.Address
+SELECT A.City
+FROM  SalesLT.Address
 AS A
-ON A.AddressID=CA.AddressID
-WHERE SOH.CustomerID IS NULL
-GROUP BY C.CustomerID,A.City;
+LEFT JOIN SalesLT.SalesOrderHeader
+AS SOH
+ON SOH.ShipToAddressID=A.AddressID
+WHERE SOH.SalesOrderID IS NULL
+GROUP BY A.City;
+
