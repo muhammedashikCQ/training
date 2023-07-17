@@ -145,15 +145,9 @@ AS OrderTimes
 FROM
 SalesLT.SalesOrderHeader
 AS SOH
-INNER JOIN SalesLT.Customer
-AS C
-ON C.CustomerID=SOH.CustomerID
-INNER JOIN SalesLT.CustomerAddress
-AS CA
-ON CA.CustomerID=C.CustomerID
 INNER JOIN SalesLT.Address
 AS A
-ON A.AddressID=CA.AddressID
+ON A.AddressID=SOH.ShipToAddressID
 GROUP BY A.City
 ORDER BY OrderTimes DESC;
 
@@ -176,15 +170,9 @@ ON SOD.ProductID=P.ProductID
 INNER JOIN SalesLT.SalesOrderHeader
 AS SOH
 ON SOH.SalesOrderID=SOD.SalesOrderID
-INNER JOIN SalesLT.Customer
-AS C
-ON C.CustomerID=SOH.CustomerID
-INNER JOIN SalesLT.CustomerAddress
-AS CA
-ON CA.CustomerID=C.CustomerID
-INNER JOIN SalesLT.Address
+INNER JOIN SalesLT.[Address]
 AS A
-ON A.AddressID=CA.AddressID
+ON A.AddressID=SOH.ShipToAddressID
 GROUP BY A.City
 ORDER BY [PROFIT] DESC
 
