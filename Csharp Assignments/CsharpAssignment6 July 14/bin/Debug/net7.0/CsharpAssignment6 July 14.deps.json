@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CsharpAssignment6 July 14/1.0.0": {
+        "runtime": {
+          "CsharpAssignment6 July 14.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CsharpAssignment6 July 14/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

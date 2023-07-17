@@ -1,0 +1,15 @@
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\obj\Debug\net7.0\CsharpAssignment6 July 14.csproj.AssemblyReference.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\obj\Debug\net7.0\CsharpAssignment6 July 14.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\obj\Debug\net7.0\CsharpAssignment6 July 14.AssemblyInfoInputs.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\obj\Debug\net7.0\CsharpAssignment6 July 14.AssemblyInfo.cs
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\obj\Debug\net7.0\CsharpAssignment6 July 14.csproj.CoreCompileInputs.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\bin\Debug\net7.0\CsharpAssignment6 July 14.exe
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\bin\Debug\net7.0\CsharpAssignment6 July 14.deps.json
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\bin\Debug\net7.0\CsharpAssignment6 July 14.runtimeconfig.json
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\bin\Debug\net7.0\CsharpAssignment6 July 14.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\bin\Debug\net7.0\CsharpAssignment6 July 14.pdb
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\obj\Debug\net7.0\CsharpAssignment6 July 14.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\obj\Debug\net7.0\refint\CsharpAssignment6 July 14.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\obj\Debug\net7.0\CsharpAssignment6 July 14.pdb
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\obj\Debug\net7.0\CsharpAssignment6 July 14.genruntimeconfig.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignment6 July 14\obj\Debug\net7.0\ref\CsharpAssignment6 July 14.dll

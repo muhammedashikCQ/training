@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment5-July 13\\CsharpAssignment5-July 13.csproj",
+      "projectUniqueName": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment5-July 14\\CsharpAssignment5-July 13.csproj",
       "projectName": "CsharpAssignment5-July 13",
-      "projectPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment5-July 13\\CsharpAssignment5-July 13.csproj",
+      "projectPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment5-July 14\\CsharpAssignment5-July 13.csproj",
       "packagesPath": "C:\\Users\\CQ-Ashik\\.nuget\\packages\\",
-      "outputPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment5-July 13\\obj\\",
+      "outputPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment5-July 14\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CQ-Ashik\\AppData\\Roaming\\NuGet\\NuGet.Config",
