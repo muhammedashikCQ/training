@@ -93,25 +93,26 @@ GROUP BY CustomerID;
    SELECT * FROM SalesLT.SalesOrderHeader;
    SELECT * FROM SalesLT.SalesOrderDetail ;
    
-   --A) From the SalesOrderHeader  (Order header table)          
-   
-   SELECT SOH.SalesOrderID,SOH.SubTotal
-   FROM SalesLT.SalesOrderHeader AS SOH;
+   --A) From the SalesOrderHeader  (Order header table)         
+   --B) Sum of OrderQtyUnitPrice  ( Order Detail table )
+   --C) Sum of OrderQtyListPrice (Product table)
 
-    --B) Sum of OrderQtyUnitPrice  ( Order Detail table )
+SELECT SOH.SalesOrderID,SOH.SubTotal,'Order header table' AS [Table]
+FROM SalesLT.SalesOrderHeader AS SOH
+
+UNION ALL
 
 SELECT SOD.SalesOrderID,
-SUM(SOD.OrderQty*SOD.UnitPrice)
+SUM(SOD.OrderQty*SOD.UnitPrice),'Order Detail table '
 AS Subtotal
 FROM SalesLT.SalesOrderDetail
 AS SOD
-GROUP BY SOD.SalesOrderID;
+GROUP BY SOD.SalesOrderID
 
-
-  --C) Sum of OrderQtyListPrice (Product table)
+UNION ALL
 
 SELECT SOD.SalesOrderID,
-SUM(SOD.UnitPrice * SOD.OrderQty)  
+SUM(SOD.UnitPrice * SOD.OrderQty) , 'Product table'
 AS SubTotal
 FROM SalesLT.SalesOrderDetail  
 AS SOD
