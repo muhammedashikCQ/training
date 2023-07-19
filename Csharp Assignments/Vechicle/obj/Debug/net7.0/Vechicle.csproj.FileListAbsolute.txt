@@ -1,0 +1,5 @@
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Vechicle.csproj.AssemblyReference.cache
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Vechicle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Vechicle.AssemblyInfoInputs.cache
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Vechicle.AssemblyInfo.cs
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Vechicle.csproj.CoreCompileInputs.cache

@@ -63,6 +63,20 @@ WHERE P.ListPrice>1000;
 SELECT * FROM SalesLT.Product;
 SELECT * FROM SalesLT.SalesOrderDetail;
 
+---------------------------------------------------
+
+--using EXISTS
+
+
+SELECT COUNT(DISTINCT SOD.ProductID) 
+FROM SalesLT.SalesOrderDetail 
+AS SOD
+WHERE EXISTS (
+SELECT 1
+FROM SalesLT.Product AS P
+WHERE P.ProductID = SOD.ProductID
+AND P.ListPrice > 1000);
+
 --7)Give the CompanyName of those customers with orders over $100000. Include the subtotal plus tax plus freight.
 
 
@@ -73,6 +87,23 @@ INNER JOIN SalesLT.SalesOrderHeader
 AS SOH 
 ON SOH.CustomerID=C.CustomerID 
 WHERE (SOH.SubTotal+ SOH.TaxAmt+SOH.Freight)>10000;
+
+------------------------------------------------------------
+
+
+--using EXISTS
+
+
+SELECT C.CompanyName
+FROM SalesLT.Customer 
+AS C
+WHERE EXISTS
+(SELECT * FROM 
+SalesLT.SalesOrderHeader 
+AS SOH
+WHERE SOH.CustomerID=C.CustomerID
+AND(SOH.SubTotal+ SOH.TaxAmt+SOH.Freight)>10000)
+
 
 --8)Find the number of left racing socks ('Racing Socks, L') ordered by CompanyName 'Riding Cycles'
 
@@ -89,6 +120,32 @@ INNER JOIN SalesLT.Product
 AS P 
 ON P.ProductID=SOD.ProductID 
 WHERE C.CompanyName='Riding Cycles' AND P.Name='Racing Socks, L';
+
+
+
+------------------------------------------------------------------------
+
+--using EXISTS
+
+
+SELECT SUM(SOD.OrderQty) AS TotalQuantity
+FROM SalesLT.SalesOrderDetail
+AS SOD
+WHERE EXISTS
+(SELECT * 
+FROM SalesLT.SalesOrderHeader
+AS SOH
+INNER JOIN SalesLT.Customer
+AS C
+ON C.CustomerID=SOH.CustomerID
+WHERE C.CompanyName='Riding Cycles'
+AND SOH.SalesOrderID=SOD.SalesOrderID
+)AND EXISTS
+(SELECT * 
+FROM SalesLT.Product 
+AS P 
+WHERE P.ProductID=SOD.ProductID
+AND P.Name='Racing Socks, L')
 
 
 --9. “Single Item Order” is a customer order where only one item is ordered. 
@@ -110,7 +167,24 @@ GROUP BY (SOD.SalesOrderID) HAVING COUNT(*)=1);
 
 
 
-SELECT * FROM SalesLT.SalesOrderDetail;
+----------------------------
+
+---Using EXISTS
+
+
+SELECT SOD.SalesOrderID,SOD.UnitPrice 
+FROM SalesLT.SalesOrderDetail
+AS SOD
+WHERE EXISTS
+(SELECT SalesOrderID 
+FROM SalesLT.SalesOrderDetail
+AS SOD1
+WHERE SOD1.SalesOrderID=SOD.SalesOrderID
+GROUP BY  SOD1.SalesOrderID
+HAVING COUNT(*)=1)
+
+
+
 
 --10.)Show the product description for culture ‘fr’ for product with ProductID 736.
 

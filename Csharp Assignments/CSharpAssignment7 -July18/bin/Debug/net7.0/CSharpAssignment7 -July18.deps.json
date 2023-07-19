@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CSharpAssignment7 -July18/1.0.0": {
+        "dependencies": {
+          "Travel": "1.0.0"
+        },
+        "runtime": {
+          "CSharpAssignment7 -July18.dll": {}
+        }
+      },
+      "Travel/1.0.0": {
+        "runtime": {
+          "Travel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CSharpAssignment7 -July18/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Travel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

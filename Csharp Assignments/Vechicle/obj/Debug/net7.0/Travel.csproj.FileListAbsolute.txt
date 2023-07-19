@@ -1,0 +1,15 @@
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Travel.csproj.AssemblyReference.cache
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Travel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Travel.AssemblyInfoInputs.cache
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Travel.AssemblyInfo.cs
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Travel.csproj.CoreCompileInputs.cache
+C:\Repository\training\Csharp Assignments\Vechicle\bin\Debug\net7.0\Travel.exe
+C:\Repository\training\Csharp Assignments\Vechicle\bin\Debug\net7.0\Travel.deps.json
+C:\Repository\training\Csharp Assignments\Vechicle\bin\Debug\net7.0\Travel.runtimeconfig.json
+C:\Repository\training\Csharp Assignments\Vechicle\bin\Debug\net7.0\Travel.dll
+C:\Repository\training\Csharp Assignments\Vechicle\bin\Debug\net7.0\Travel.pdb
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Travel.dll
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\refint\Travel.dll
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Travel.pdb
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\Travel.genruntimeconfig.cache
+C:\Repository\training\Csharp Assignments\Vechicle\obj\Debug\net7.0\ref\Travel.dll
