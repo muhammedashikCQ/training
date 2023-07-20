@@ -10,9 +10,9 @@ namespace Travel
     public class Vechicle
     {
         public string Name { get; set; }
-        private protected string Colour ="ashik"; 
+        public string Colour; 
         public int SeatingCpapcity { get; set; }
-        protected int Values{get;set;}
+        internal int Values{get;set;}
         public Vechicle(string name,string colour,int seats) 
         {
             Name = name;
@@ -30,12 +30,11 @@ namespace Travel
         {
             Name=name;
             Colour = colour;
-            Colour = "asssss";
             SeatingCpapcity = seats;
         }
         public override int PersonsAllowed()
         {
-            return SeatingCpapcity+1;
+            return SeatingCpapcity  +1;
         }
     }
     public class Bike : Vechicle

@@ -12,15 +12,14 @@ public class vechicles
         int Result4 = object4.PersonsAllowed();
         Console.WriteLine("The Seating capacity is :" + Result4);
     }
-    public class Flight:Vechicle
-    {
-        public Flight(string name, string colour, int seats):base(name, colour, seats)
-        {
-            Values = 10;
-            name = "ashik";
-        }
-       
-    }
+   
 }
-     
-    
+public class Flight : Vechicle
+{
+    public Flight(string name, string colour, int seats) : base(name, colour, seats)
+    {
+        name = "ashik";
+    }
+
+}
+

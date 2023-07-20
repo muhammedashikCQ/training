@@ -28,7 +28,7 @@ public class program
 {
     public static void Main(string[] args)
     {
-        Employee employee = new Employee(1, "Ashik", new DateTime(2023, 07, 01), "Developer", 200000, 'P');
+        Employee employee = new Employee(1, "Ashik", new DateTime(2023, 07, 01), "Developer", 200000, 'D');
         IBonusCalculator bonus = null;
         if (employee.JobType == 'P')
         {
@@ -43,6 +43,7 @@ public class program
         else
         {
             Console.WriteLine("you entered wrong key");
+            return;
         }
         double Amount = bonus.CalculateBonus(employee);
         Console.WriteLine("The Bonus of " + employee.Name +" "+"is  : " + Amount);
