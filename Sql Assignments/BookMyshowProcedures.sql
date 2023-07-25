@@ -206,8 +206,7 @@ EXEC StateTable
 EXEC StateTable
 @StateName='Uttarakhand'
 
-SELECT * FROM State
-SELECT * FROM City
+
 
 ----Create Procedure for Inserting into City Table--
 GO
@@ -792,76 +791,10 @@ EXEC TheaterScreenSeat
 @Screens =@Screens,
 @TheaterSeat=@TheaterSeat
 
-ALTER TABLE Payment
-DROP COLUMN [Timestamp]
-SELECT * FROM Payment
+
+
+
 -------------------------------------------------------------
------Creating Procedure for Payment---
-
-GO
-CREATE PROCEDURE PaymentTable
-(
-@Amount DECIMAL,
-@ConvenienceFees DECIMAL,
-@TotalAmout DECIMAL,
-@Timestamp DATETIME,
-@TransactionId INT,
-@PaymentMethodID INT
-)
-AS
-BEGIN
-INSERT INTO Payment(
-Amount,
-ConvinienceFees,
-TotalAmount,
-[Timestamp] ,
-TransactionId,
-PaymentMethodID)
-VALUES(
-@Amount,
-@ConvenienceFees ,
-@TotalAmout ,
-@Timestamp ,
-@TransactionId,
-@PaymentMethodID)
-END
-GO
-EXEC PaymentTable
-@Amount=550,
-@ConvenienceFees=10 ,
-@TotalAmout=560 ,
-@Timestamp='2023-03-12',
-@TransactionId=1,
-@PaymentMethodID=2
-EXEC PaymentTable
-@Amount=540,
-@ConvenienceFees=10 ,
-@TotalAmout=550 ,
-@Timestamp='2023-03-16',
-@TransactionId=2,
-@PaymentMethodID=3
-EXEC PaymentTable
-@Amount=330,
-@ConvenienceFees=5 ,
-@TotalAmout=335 ,
-@Timestamp='2023-03-19',
-@TransactionId=4,
-@PaymentMethodID=1
-EXEC PaymentTable
-@Amount=450,
-@ConvenienceFees=10 ,
-@TotalAmout=460 ,
-@Timestamp='2023-04-20',
-@TransactionId=3,
-@PaymentMethodID=3
-
-
-
-DROP TABLE BookingDetail;
-DROP  TABLE Payment
-
---make timestamp -getdate();
-
 
 ------Creating Procedure for Show----
 GO
@@ -891,82 +824,146 @@ EXEC ShowTable
 @StartTime='08/05/2013 03:00:00 PM',
 @EndTime='08/05/2013 06:00:00 PM',
 @MovielanguageID=17,
-@ScreenId=
+@ScreenId=26
 
 EXEC ShowTable
 @StartTime='09/05/2013 10:00:00 PM',
 @EndTime='09/05/2013 1:00:00 PM',
 @MovielanguageID=17,
-@ScreenId=
+@ScreenId=28
 
 
 EXEC ShowTable
 @StartTime='10/05/2013 9:00:00 AM',
 @EndTime='08/05/2013 12:00:00 AM',
-@MovielanguageID=18,
-@ScreenId=
+@MovielanguageID=16,
+@ScreenId=41
 
 EXEC ShowTable
 @StartTime='09/05/2013 09:00:00 AM',
 @EndTime='09/05/2013 10:00:00 AM',
-@MovielanguageID=19,
-@ScreenId=
+@MovielanguageID=10,
+@ScreenId=45
 
 EXEC ShowTable
 @StartTime='11/06/2013 08:00:00 AM',
 @EndTime='11/06/2013 11:00:00 AM',
-@MovielanguageID=19,
-@ScreenId=
+@MovielanguageID=15,
+@ScreenId=37
 
-----------Creating Procedure for BookedSeat ---
+
+---Create Procedure For Booking Detail Table---
+
+
+CREATE TYPE SeatEntity
+AS TABLE
+(
+	Id INT
+)
 GO
-CREATE PROCEDURE BookedSeatTable
-(
-@SeatId INT
-)
-AS
+CREATE PROCEDURE BookingDetailTable(
+	@UserId	INT,
+	@PaymentMethodId INT,
+	@ShowId	INT,
+	@SeatValues SeatEntity READONLY
+	)
+AS 
 BEGIN
-INSERT INTO BookedSeat(
-SeatId)
-VALUES(
-@SeatId)
-EXEC BookedSeatTable
-@SeatId=
-EXEC BookedSeatTable
-@SeatId=
-EXEC BookedSeatTable
-@SeatId=
-EXEC BookedSeatTable
-@SeatId=
-EXEC BookedSeatTable
-@SeatId=
 
-CREATE PROCEDURE BookingDetailTable
-(
-@BookedSeatId INT,
-@ShowId INT,
-@UserId INT,
-@PaymentID INT
+INSERT INTO Booking(
+	PaymentMethodId,
+	UserId,
+	ShowId
+	)
+SELECT 
+	@PaymentMethodId,
+	@UserId,
+	@ShowId
+	
 
-)
-AS
-BEGIN
+DECLARE @BookingId INT= SCOPE_IDENTITY();
+
 INSERT INTO BookingDetail(
-BookedSeatId,
-ShowId,
-UserId,
-PaymentID)
-VALUES(
-@BookedSeatId,
-@ShowId,
-@UserId,
-@PaymentID)
+	BookingId,
+	SeatId,
+	Price)
+SELECT
+	@BookingId,
+	S.SeatId,
+	SC.SeatClassPrice
+
+FROM @SeatValues AS SV
+INNER JOIN Seat AS S
+ON S.SeatId=SV.Id
+INNER JOIN SeatClass AS SC
+ON SC.SeatClassId=S.SeatClassId
+
+DECLARE @TotalAmount DECIMAL
+SELECT @TotalAmount=SUM(Price) FROM BookingDetail
+UPDATE Booking
+    SET Booking.TotalAmount =@TotalAmount 
 END
 GO
 
-EXEC BookingDetailTable
-@BookedSeatId=,
-@ShowId=,
-@UserId=,
-@PaymentID=;
 
+
+DECLARE @SeatValues SeatEntity
+INSERT INTO @SeatValues(Id)
+	SELECT
+		176
+			UNION ALL
+	SELECT
+		186
+
+
+EXEC BookingDetailTable
+	@UserId	=1,
+	@PaymentMethodId =2,
+	@ShowId	=15,
+	@SeatValues=@SeatValues
+
+---------------------------------
+
+DECLARE @SeatValues SeatEntity
+INSERT INTO @SeatValues(Id)
+	SELECT
+		178
+			UNION ALL
+	SELECT
+		220
+			UNION ALL
+	SELECT 
+		289
+
+
+
+EXEC BookingDetailTable
+	@UserId	=3,
+	@PaymentMethodId =1,
+	@ShowId	=19,
+	@SeatValues=@SeatValues
+	
+
+------------------------------
+
+
+DECLARE @SeatValues SeatEntity
+INSERT INTO @SeatValues(Id)
+	SELECT
+		195
+			UNION ALL
+	SELECT
+		224
+	
+
+
+
+EXEC BookingDetailTable
+	@UserId	=5,
+	@PaymentMethodId =2,
+	@ShowId	=18,
+	@SeatValues=@SeatValues
+	
+
+	
+	
