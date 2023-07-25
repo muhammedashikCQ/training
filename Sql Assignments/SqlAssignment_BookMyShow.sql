@@ -36,11 +36,7 @@ EmailId VARCHAR(100) NOT NULL,
 Age INT NOT NULL,
 PhoneNumber  VARCHAR(50) NOT NULL,
 CreatedOn DATETIME NOT NULL
-DEFAULT CURRENT_TIMESTAMP,
-UserLikeId INT
-
-
-
+DEFAULT GETDATE()
 ---Adding Constraints--
 
 CONSTRAINT pk_User
@@ -59,7 +55,6 @@ UNIQUE(UserName));
 CREATE TABLE Theater(
 TheaterId INT IDENTITY,
 TheaterName VARCHAR(50) NOT NULL,
-TotalScreen INT NOT NULL,
 CityId INT
 --Adding Constraints--
 
@@ -117,8 +112,7 @@ PRIMARY KEY(ScreenId));
 CREATE TABLE SeatClass(
 SeatClassId TINYINT IDENTITY,
 SeatClassName VARCHAR(50),
-SeatClassPrice INT NOT NULL,
-ScreenId TINYINT
+SeatClassPrice INT NOT NULL
 --Adding Constraints--
 
 CONSTRAINT pk_SeatClass
@@ -131,7 +125,8 @@ UNIQUE(SeatClassName));
 CREATE TABLE Seat(
 SeatId INT IDENTITY,
 SeatNumber SMALLINT NOT NULL,
-SeatClassId TINYINT
+SeatClassId TINYINT,
+ScreenId TINYINT
 --Adding Constraints
 
 CONSTRAINT pk_Seat
@@ -141,7 +136,6 @@ PRIMARY KEY(SeatId));
 
 CREATE TABLE BookedSeat(
 BookedSeatId INT IDENTITY,
-BookingDetailId INT,
 SeatId INT
 ---Adding Constraints--
 
@@ -202,16 +196,6 @@ RatingValue INT
 CONSTRAINT pk_Rating
 PRIMARY KEY(RatingId));
 
----Table for UserLike
-
-CREATE TABLE UserLike(
-UserLikeId INT IDENTITY,
-GenreId TINYINT,
-LanguageId TINYINT
---Adding Constraints--
-
-CONSTRAINT pk_UserLike
-PRIMARY KEY(UserLikeId));
 
 --Table for Genre
 
@@ -329,25 +313,6 @@ FOREIGN KEY(PaymentId)
 REFERENCES Payment(PaymentId);
 
 
----Rating---
-
---Connecting Rating - Movie
-
-
-ALTER TABLE Rating
-ADD CONSTRAINT fk_Rating_Movie
-FOREIGN KEY(MovieId)
-REFERENCES Movie(MovieId);
-
---User--
-
---Connecting User-UserLike
-
-ALTER TABLE [User]
-ADD CONSTRAINT fk_User_UserLike
-FOREIGN KEY(UserLikeId)
-REFERENCES [UserLike](UserLikeId);
-
 --Theater--
 
 --Connecting Theater-City
@@ -386,23 +351,6 @@ ADD CONSTRAINT fk_Payment_PaymentMethod
 FOREIGN KEY(PaymentMethodId)
 REFERENCES PaymentMethod(PaymentMethodId);
 
-
---UserLike---
-
---Connecting UserLike-GenreId--
-
-ALTER TABLE UserLike
-ADD CONSTRAINT fk_UserLike_GenreId
-FOREIGN KEY(GenreId)
-REFERENCES Genre(GenreId);
-
-
-ALTER TABLE UserLike
-ADD CONSTRAINT fk_UserLike_LanguageId
-FOREIGN KEY(LanguageId)
-REFERENCES Language(LanguageId);
-
-
 ---MovieLanguage--
 
 ---Connecting MovieLanguage-Movie
@@ -438,24 +386,7 @@ FOREIGN KEY(GenreId)
 REFERENCES Genre(GenreId);
 
 
---SeatClass--
-
---Connecting SeatClass-Screen
-
-ALTER TABLE SeatClass
-ADD CONSTRAINT fk_SeatClass_Screen
-FOREIGN KEY(ScreenId)
-REFERENCES Screen(ScreenId);
-
-
 --BookedSeat--
-
---Connecting BookedSeat-BookingDetail
-
-ALTER TABLE BookedSeat
-ADD CONSTRAINT fk_BookedSeat_BookingDetail
-FOREIGN KEY(BookingDetailId)
-REFERENCES BookingDetail(BookingDetailId);
 
 --Connecting BookedSeat-Seat
 
@@ -473,6 +404,11 @@ ALTER TABLE Seat
 ADD CONSTRAINT fk_Seat_SeatClass
 FOREIGN KEY(SeatClassId)
 REFERENCES SeatClass(SeatClassId);
+
+--Connecting Seat -Screen
+ALTER TABLE Seat
+ADD CONSTRAINT fk_Seat_Screen
+FOREIGN KEY(ScreenId) REFERENCES Screen(ScreenId)
 
 
 
@@ -500,8 +436,5 @@ ALTER TABLE UserRating
 ADD CONSTRAINT fk_UserRating_Rating
 FOREIGN KEY(RatingId)
 REFERENCES [Rating](RatingId);
-
-
-
 
 
