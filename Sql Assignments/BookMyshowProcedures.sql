@@ -543,6 +543,13 @@ FROM @TheaterSeat  AS T
 CROSS JOIN @Inserted I
 END
 GO
+
+
+DELETE Theater
+DELETE Seat
+DELETE Screen
+
+
 --------------------------
 
 DECLARE @Screens ScreenType
@@ -604,6 +611,7 @@ EXEC TheaterScreenSeat
 @Screens =@Screens,
 @TheaterSeat=@TheaterSeat
 --------------------------------------------------
+
 
 DECLARE @Screens ScreenType
 INSERT INTO @Screens(
@@ -793,7 +801,9 @@ EXEC TheaterScreenSeat
 
 
 
-
+SELECT * FROM Theater
+SELECT * FROM Screen
+SELECT *  FROM Seat
 -------------------------------------------------------------
 
 ------Creating Procedure for Show----
@@ -824,32 +834,32 @@ EXEC ShowTable
 @StartTime='08/05/2013 03:00:00 PM',
 @EndTime='08/05/2013 06:00:00 PM',
 @MovielanguageID=17,
-@ScreenId=26
+@ScreenId=46
 
 EXEC ShowTable
 @StartTime='09/05/2013 10:00:00 PM',
 @EndTime='09/05/2013 1:00:00 PM',
-@MovielanguageID=17,
-@ScreenId=28
+@MovielanguageID=15,
+@ScreenId=47
 
 
 EXEC ShowTable
 @StartTime='10/05/2013 9:00:00 AM',
 @EndTime='08/05/2013 12:00:00 AM',
 @MovielanguageID=16,
-@ScreenId=41
+@ScreenId=48
 
 EXEC ShowTable
 @StartTime='09/05/2013 09:00:00 AM',
 @EndTime='09/05/2013 10:00:00 AM',
 @MovielanguageID=10,
-@ScreenId=45
+@ScreenId=49
 
 EXEC ShowTable
 @StartTime='11/06/2013 08:00:00 AM',
 @EndTime='11/06/2013 11:00:00 AM',
 @MovielanguageID=15,
-@ScreenId=37
+@ScreenId=50
 
 
 ---Create Procedure For Booking Detail Table---
@@ -861,7 +871,7 @@ AS TABLE
 	Id INT
 )
 GO
-CREATE PROCEDURE BookingDetailTable(
+CREATE OR ALTER PROCEDURE BookingDetailTable(
 	@UserId	INT,
 	@PaymentMethodId INT,
 	@ShowId	INT,
@@ -910,16 +920,16 @@ GO
 DECLARE @SeatValues SeatEntity
 INSERT INTO @SeatValues(Id)
 	SELECT
-		176
+		306
 			UNION ALL
 	SELECT
-		186
+		400
 
 
 EXEC BookingDetailTable
 	@UserId	=1,
 	@PaymentMethodId =2,
-	@ShowId	=15,
+	@ShowId	=33,
 	@SeatValues=@SeatValues
 
 ---------------------------------
