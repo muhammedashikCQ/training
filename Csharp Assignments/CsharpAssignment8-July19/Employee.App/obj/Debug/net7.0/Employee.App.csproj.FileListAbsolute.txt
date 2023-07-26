@@ -1,0 +1,15 @@
+C:\Repository\training\Csharp Assignments\Employee.App\obj\Debug\net7.0\Employee.App.csproj.AssemblyReference.cache
+C:\Repository\training\Csharp Assignments\Employee.App\obj\Debug\net7.0\Employee.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\training\Csharp Assignments\Employee.App\obj\Debug\net7.0\Employee.App.AssemblyInfoInputs.cache
+C:\Repository\training\Csharp Assignments\Employee.App\obj\Debug\net7.0\Employee.App.AssemblyInfo.cs
+C:\Repository\training\Csharp Assignments\Employee.App\obj\Debug\net7.0\Employee.App.csproj.CoreCompileInputs.cache
+C:\Repository\training\Csharp Assignments\Employee.App\bin\Debug\net7.0\Employee.App.exe
+C:\Repository\training\Csharp Assignments\Employee.App\bin\Debug\net7.0\Employee.App.deps.json
+C:\Repository\training\Csharp Assignments\Employee.App\bin\Debug\net7.0\Employee.App.runtimeconfig.json
+C:\Repository\training\Csharp Assignments\Employee.App\bin\Debug\net7.0\Employee.App.dll
+C:\Repository\training\Csharp Assignments\Employee.App\bin\Debug\net7.0\Employee.App.pdb
+C:\Repository\training\Csharp Assignments\Employee.App\obj\Debug\net7.0\Employee.App.dll
+C:\Repository\training\Csharp Assignments\Employee.App\obj\Debug\net7.0\refint\Employee.App.dll
+C:\Repository\training\Csharp Assignments\Employee.App\obj\Debug\net7.0\Employee.App.pdb
+C:\Repository\training\Csharp Assignments\Employee.App\obj\Debug\net7.0\Employee.App.genruntimeconfig.cache
+C:\Repository\training\Csharp Assignments\Employee.App\obj\Debug\net7.0\ref\Employee.App.dll
