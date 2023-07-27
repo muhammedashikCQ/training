@@ -45,8 +45,11 @@ namespace SportsApp
             catch(InvalidUserInputException ex)
             {
                 Console.WriteLine(ex.Message);
+  
             }
+
         }
+        
 
     }
     public class InvalidUserInputException : Exception
