@@ -845,13 +845,13 @@ EXEC ShowTable
 
 EXEC ShowTable
 @StartTime='10/05/2013 9:00:00 AM',
-@EndTime='08/05/2013 12:00:00 AM',
+@EndTime='10/05/2013 12:00:00 AM',
 @MovielanguageID=16,
 @ScreenId=48
 
 EXEC ShowTable
-@StartTime='09/05/2013 09:00:00 AM',
-@EndTime='09/05/2013 10:00:00 AM',
+@StartTime='11/05/2013 09:00:00 AM',
+@EndTime='11/05/2013 10:00:00 AM',
 @MovielanguageID=10,
 @ScreenId=49
 
@@ -923,13 +923,13 @@ INSERT INTO @SeatValues(Id)
 		306
 			UNION ALL
 	SELECT
-		400
+		308
 
 
 EXEC BookingDetailTable
 	@UserId	=1,
 	@PaymentMethodId =2,
-	@ShowId	=33,
+	@ShowId	=44,
 	@SeatValues=@SeatValues
 
 ---------------------------------
@@ -937,20 +937,20 @@ EXEC BookingDetailTable
 DECLARE @SeatValues SeatEntity
 INSERT INTO @SeatValues(Id)
 	SELECT
-		178
+		312
 			UNION ALL
 	SELECT
-		220
+		313
 			UNION ALL
 	SELECT 
-		289
+		314
 
 
 
 EXEC BookingDetailTable
-	@UserId	=3,
-	@PaymentMethodId =1,
-	@ShowId	=19,
+	@UserId	=5,
+	@PaymentMethodId =2,
+	@ShowId	=48,
 	@SeatValues=@SeatValues
 	
 
@@ -960,18 +960,18 @@ EXEC BookingDetailTable
 DECLARE @SeatValues SeatEntity
 INSERT INTO @SeatValues(Id)
 	SELECT
-		195
+		393
 			UNION ALL
 	SELECT
-		224
+		395
 	
 
 
 
 EXEC BookingDetailTable
-	@UserId	=5,
-	@PaymentMethodId =2,
-	@ShowId	=18,
+	@UserId	=7,
+	@PaymentMethodId =3,
+	@ShowId	=44,
 	@SeatValues=@SeatValues
 	
 

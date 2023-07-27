@@ -1,0 +1,15 @@
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\bin\Debug\net7.0\Array.exe
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\bin\Debug\net7.0\Array.deps.json
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\bin\Debug\net7.0\Array.runtimeconfig.json
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\bin\Debug\net7.0\Array.dll
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\bin\Debug\net7.0\Array.pdb
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\obj\Debug\net7.0\Array.csproj.AssemblyReference.cache
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\obj\Debug\net7.0\Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\obj\Debug\net7.0\Array.AssemblyInfoInputs.cache
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\obj\Debug\net7.0\Array.AssemblyInfo.cs
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\obj\Debug\net7.0\Array.csproj.CoreCompileInputs.cache
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\obj\Debug\net7.0\Array.dll
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\obj\Debug\net7.0\refint\Array.dll
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\obj\Debug\net7.0\Array.pdb
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\obj\Debug\net7.0\Array.genruntimeconfig.cache
+C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\Array\obj\Debug\net7.0\ref\Array.dll
