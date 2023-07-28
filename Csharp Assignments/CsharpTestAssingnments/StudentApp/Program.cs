@@ -1,4 +1,5 @@
 ﻿using StudentApp;
+using System.Runtime.ConstrainedExecution;
 
 public class program
 {
@@ -19,5 +20,12 @@ public class program
         {
             Console.WriteLine(student.Name);
         }
+        var c = stdlist.Where(x => x.Marks > 50 && x.Name.EndsWith("s")).ToList();
+        foreach (Student student in c)
+        {
+            Console.WriteLine( student);
+        }
+ 
+
     }
 }
