@@ -14,7 +14,7 @@ namespace IsWordCount
             string inputs = Console.ReadLine();
             Console.WriteLine("Enter the word that you want to find the occurance");
             string words=Console.ReadLine();
-            int result = IsWordCountExtensionClass.GetwordCount(inputs,words);
+            int result = inputs.GetwordCount(words);
             Console.WriteLine(result);
         }
    }

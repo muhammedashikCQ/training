@@ -9,27 +9,25 @@ namespace EmployeeModel
 {
     public class Employee
     {
-        public static int Count { get; set; }
-        private string Id = "Emp1000";
+        private static int count { get; set; }
+        public string Id { get;private set; }
         public string Name { get; set; }
         public int Salary { get; set; }
         public string EmployeeType { get; set; }
         static Employee()
         {
-            Count = 0;
+            count = 0;
         }
         public Employee(string name, int salary)
         {
-            name = Name;
-            salary = Salary;
-            Count += 1;
-            int x = int.Parse(Id.Substring(3));
-            x += 1;
-            Id = "Emp" + x;
+            Name = name;
+            Salary = salary;
+            count += 1;
+            Id = "Emp" + (count+1000);
         }
         public void Display()
         {
-            Console.WriteLine("The Total Number Of Employee is :  " + Employee.Count);
+            Console.WriteLine("The Total Number Of Employee is :  " + count);
         }
 
     }

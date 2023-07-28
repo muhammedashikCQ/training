@@ -13,3 +13,18 @@ C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\IsWordCount\o
 C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\IsWordCount\obj\Debug\net7.0\IsWordCount.pdb
 C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\IsWordCount\obj\Debug\net7.0\IsWordCount.genruntimeconfig.cache
 C:\Repository\training\Csharp Assignments\CshapAssignment10-July26\IsWordCount\obj\Debug\net7.0\ref\IsWordCount.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\bin\Debug\net7.0\IsWordCount.exe
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\bin\Debug\net7.0\IsWordCount.deps.json
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\bin\Debug\net7.0\IsWordCount.runtimeconfig.json
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\bin\Debug\net7.0\IsWordCount.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\bin\Debug\net7.0\IsWordCount.pdb
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\obj\Debug\net7.0\IsWordCount.csproj.AssemblyReference.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\obj\Debug\net7.0\IsWordCount.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\obj\Debug\net7.0\IsWordCount.AssemblyInfoInputs.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\obj\Debug\net7.0\IsWordCount.AssemblyInfo.cs
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\obj\Debug\net7.0\IsWordCount.csproj.CoreCompileInputs.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\obj\Debug\net7.0\IsWordCount.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\obj\Debug\net7.0\refint\IsWordCount.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\obj\Debug\net7.0\IsWordCount.pdb
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\obj\Debug\net7.0\IsWordCount.genruntimeconfig.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment11-July26\obj\Debug\net7.0\ref\IsWordCount.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repository\\training\\Csharp Assignments\\CshapAssignment10-July26\\IsWordCount\\IsWordCount.csproj": {}
+    "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignments-JULY 26\\CsharpAssignment11-July26\\IsWordCount.csproj": {}
   },
   "projects": {
-    "C:\\Repository\\training\\Csharp Assignments\\CshapAssignment10-July26\\IsWordCount\\IsWordCount.csproj": {
+    "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignments-JULY 26\\CsharpAssignment11-July26\\IsWordCount.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repository\\training\\Csharp Assignments\\CshapAssignment10-July26\\IsWordCount\\IsWordCount.csproj",
+        "projectUniqueName": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignments-JULY 26\\CsharpAssignment11-July26\\IsWordCount.csproj",
         "projectName": "IsWordCount",
-        "projectPath": "C:\\Repository\\training\\Csharp Assignments\\CshapAssignment10-July26\\IsWordCount\\IsWordCount.csproj",
+        "projectPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignments-JULY 26\\CsharpAssignment11-July26\\IsWordCount.csproj",
         "packagesPath": "C:\\Users\\CQ-Ashik\\.nuget\\packages\\",
-        "outputPath": "C:\\Repository\\training\\Csharp Assignments\\CshapAssignment10-July26\\IsWordCount\\obj\\",
+        "outputPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignments-JULY 26\\CsharpAssignment11-July26\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CQ-Ashik\\AppData\\Roaming\\NuGet\\NuGet.Config",

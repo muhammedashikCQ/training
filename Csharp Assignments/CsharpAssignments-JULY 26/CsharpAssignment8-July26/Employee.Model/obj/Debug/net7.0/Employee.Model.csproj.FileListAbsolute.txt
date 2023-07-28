@@ -10,3 +10,15 @@ C:\Repository\training\Csharp Assignments\Employee.Model\obj\Debug\net7.0\Employ
 C:\Repository\training\Csharp Assignments\Employee.Model\obj\Debug\net7.0\refint\Employee.Model.dll
 C:\Repository\training\Csharp Assignments\Employee.Model\obj\Debug\net7.0\Employee.Model.pdb
 C:\Repository\training\Csharp Assignments\Employee.Model\obj\Debug\net7.0\ref\Employee.Model.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\obj\Debug\net7.0\Employee.Model.csproj.AssemblyReference.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\obj\Debug\net7.0\Employee.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\obj\Debug\net7.0\Employee.Model.AssemblyInfoInputs.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\obj\Debug\net7.0\Employee.Model.AssemblyInfo.cs
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\obj\Debug\net7.0\Employee.Model.csproj.CoreCompileInputs.cache
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\obj\Debug\net7.0\Employee.Model.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\obj\Debug\net7.0\refint\Employee.Model.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\obj\Debug\net7.0\Employee.Model.pdb
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\bin\Debug\net7.0\Employee.Model.deps.json
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\bin\Debug\net7.0\Employee.Model.dll
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\bin\Debug\net7.0\Employee.Model.pdb
+C:\Repository\training\Csharp Assignments\CsharpAssignments-JULY 26\CsharpAssignment8-July26\Employee.Model\obj\Debug\net7.0\ref\Employee.Model.dll

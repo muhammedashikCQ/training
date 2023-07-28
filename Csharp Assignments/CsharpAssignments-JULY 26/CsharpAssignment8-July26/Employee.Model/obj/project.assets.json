@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repository\\training\\Csharp Assignments\\Employee.Model\\Employee.Model.csproj",
+      "projectUniqueName": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignments-JULY 26\\CsharpAssignment8-July26\\Employee.Model\\Employee.Model.csproj",
       "projectName": "Employee.Model",
-      "projectPath": "C:\\Repository\\training\\Csharp Assignments\\Employee.Model\\Employee.Model.csproj",
+      "projectPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignments-JULY 26\\CsharpAssignment8-July26\\Employee.Model\\Employee.Model.csproj",
       "packagesPath": "C:\\Users\\CQ-Ashik\\.nuget\\packages\\",
-      "outputPath": "C:\\Repository\\training\\Csharp Assignments\\Employee.Model\\obj\\",
+      "outputPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignments-JULY 26\\CsharpAssignment8-July26\\Employee.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CQ-Ashik\\AppData\\Roaming\\NuGet\\NuGet.Config",
