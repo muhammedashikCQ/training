@@ -41,9 +41,9 @@ function MyFunction() {
   console.log(computerScienceStudent);
   const NameofStudent=Student.filter(x=>x.Age>21).map(x=>x.FirstName);
   console.log(NameofStudent);
-  const Science =Student.some(x=>x.Department === "Computer Science" && x.FirstName == "Robert");
+  const Science =Student.some(x=>x.Department === "Computer Science" && x.FirstName === "Robert");
   console.log(Science);
-  const StudentAge=Student.some(x=>x.Age>23 && x.Department=="Mathematics");
+  const StudentAge=Student.some(x=>x.Age>23 && x.Department==="Mathematics");
   console.log(StudentAge);
   const AllStudentsAge=Student.every(x=>x.Age>18);
   console.log(AllStudentsAge);
