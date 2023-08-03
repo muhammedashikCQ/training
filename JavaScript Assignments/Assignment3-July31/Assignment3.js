@@ -65,18 +65,18 @@ function MyFunction()
 
     //4)Check whether there is any movie in the list with actor name “John Doe”
 
-    var moviepresent=Movies.some(x=>x.ActorName==='John Doe')
+    const moviepresent=Movies.some(x=>x.ActorName==='John Doe')
     console.log(`Whether there is any movie in the list with actor name “John Doe” : ${moviepresent}`)
     //5)Display the count of movies where the actor name is "Sophia Williams"
 
-    var count=0;
+    let count1=0;
     Movies.forEach(elements=>{
         if(elements.ActorName==='Sophia Williams')
         {
-            count++
+            count1++
         }
     })
-    console.log(`The Count of Movies : ${count}`)
+    console.log(`The Count of Movies : ${count1}`)
     
     //6)Insert an element 
 // 		{
@@ -97,16 +97,16 @@ function MyFunction()
     //7)Check whether there exists any duplicate movie names present in the array
 
 
-    var count=0;
+    let count2=0;
     Movies.forEach(element1=>{
         Movies.forEach(element2=>{
             if(element2.MovieName===element1.MovieName)
             {
-                count++;
+                count2++;
             }
         })
     })
-    if(count>Movies.length)
+    if(count2>Movies.length)
     {
         console.log("Duplicates are present")
     }
@@ -117,31 +117,31 @@ function MyFunction()
 
 //8) Create a new array starting from the movie "City of Shadows"
 
-var index=Movies.findIndex(x=>x.MovieName==='City of Shadows')
-var NewArray=Movies.slice(index)
-console.log(NewArray)
+let index1=Movies.findIndex(x=>x.MovieName==='City of Shadows')
+let NewArray1=Movies.slice(index)
+console.log(NewArray1)
 
 
     //9)List the distinct actor names in array
 
 
-    var NewArray=[];
+    let NewArray2=[];
     Movies.forEach(element1 =>
     {
-        var count=0;
+        let count3=0;
         Movies.forEach(element2 =>
         {
             if(element2.ActorName===element1.ActorName)
             {
-                count++;
+                count3++;
             }
         })
-        if(count===1)
+        if(count3===1)
         {
-           NewArray.push(element1.ActorName)
+           NewArray2.push(element1.ActorName)
         }
     })
-    console.log(NewArray)
+    console.log(NewArray2)
 
 
 
@@ -152,8 +152,8 @@ console.log(NewArray)
 //             "ReleaseDate": "2023-08-11"
 //       }
 // as next element to movie “Love and Destiny”
-    var index=Movies.findIndex(x=>x.MovieName==='Love and Destiny')
-    Movies.splice(index+1,0,{
+    let index2=Movies.findIndex(x=>x.MovieName==='Love and Destiny')
+    Movies.splice(index2+1,0,{
    			"MovieName": "Rich & Poor",
     	    "ActorName": "Johnie Walker",
    	 		"ReleaseDate": "2023-08-11"
@@ -164,20 +164,20 @@ console.log(NewArray)
 
 //11) Display the count of distinct actor names in array
 
-    var NewArray=[];
-    var CountOfActors=0;
+    let NewArray3=[];
+    let CountOfActors=0;
     Movies.forEach(element1 =>
     {
   
-        var count=0;
+        let count4=0;
         Movies.forEach(element2 =>
         {
             if(element2.ActorName===element1.ActorName)
             {
-                count++;
+                count4++;
             }
         })
-        if(count===1)
+        if(count4===1)
         {
             CountOfActors++;
         }
@@ -187,15 +187,15 @@ console.log(NewArray)
 
 //12) Remove the movie named  "The Last Stand"
 
-    var index=Movies.findIndex(x=>x.MovieName==='The Last Stand')
-    Movies.splice(index,1)
+    let index3=Movies.findIndex(x=>x.MovieName==='The Last Stand')
+    Movies.splice(index3,1)
     console.log(Movies)
 
 
 //13 ) Check whether all the movies are released after 2021 Dec 31
 
 
-var CheckMovies=Movies.every(x=>x.ReleaseDate.slice(0,4)>'2021-12-31')
+let CheckMovies=Movies.every(x=>x.ReleaseDate.slice(0,4)>'2021-12-31')
 console.log(`Whether all the movies are released after 2021 Dec 31 :${CheckMovies}`)
 
 
@@ -213,14 +213,14 @@ console.log(Movies)
 
 
 
-    var NewArray;
+    let NewArray4;
     Movies.forEach(elements=>
     {
         if(elements.MovieName.length>10)
         {
-            NewArray.push(elements.MovieName)
+            NewArray4.push(elements.MovieName)
         }
     })
-    console.log(NewArray)
+    console.log(NewArray4)
 
 }
