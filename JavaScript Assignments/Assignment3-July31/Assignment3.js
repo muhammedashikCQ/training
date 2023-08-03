@@ -223,5 +223,4 @@ console.log(Movies)
     })
     console.log(NewArray)
 
-
 }
