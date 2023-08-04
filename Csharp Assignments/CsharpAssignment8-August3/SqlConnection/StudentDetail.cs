@@ -43,25 +43,25 @@ public class StudentDetail
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
             SqlParameter paramName = new SqlParameter();
-            paramName.ParameterName = "Name";
+            paramName.ParameterName = "@Name";
             paramName.Value = name;
             paramName.SqlDbType = System.Data.SqlDbType.VarChar;
             paramName.Size = 100;
 
             SqlParameter paramAddress = new SqlParameter();
-            paramAddress.ParameterName = "Address";
+            paramAddress.ParameterName = "@Address";
             paramAddress.Value = address;
             paramAddress.SqlDbType = System.Data.SqlDbType.VarChar;
             paramAddress.Size = 100;
 
             SqlParameter paramClass = new SqlParameter();
-            paramClass.ParameterName = "Class";
+            paramClass.ParameterName = "@Class";
             paramClass.Value= std;
             paramClass.SqlDbType = System.Data.SqlDbType.VarChar;
             paramClass.Size= 100;
             
             SqlParameter paramMark = new SqlParameter();
-            paramMark.ParameterName = "Mark";
+            paramMark.ParameterName = "@Mark";
             paramMark.Value = mark;
             paramMark.SqlDbType = System.Data.SqlDbType.VarChar;
             paramMark.Size = 10;
@@ -81,6 +81,7 @@ public class StudentDetail
             int returnvalue = (int)paramReturn.Value;
             return returnvalue;
 
+            con.Close();
 
     }
   }
