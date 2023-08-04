@@ -1,7 +1,7 @@
 ﻿using StudentApp;
 using System.Runtime.ConstrainedExecution;
 
-public class program
+public class programs
 {
     static void Main(string[] args)
     {

@@ -1,0 +1,15 @@
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\bin\Debug\net7.0\ThreadTest.exe
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\bin\Debug\net7.0\ThreadTest.deps.json
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\bin\Debug\net7.0\ThreadTest.runtimeconfig.json
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\bin\Debug\net7.0\ThreadTest.dll
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\bin\Debug\net7.0\ThreadTest.pdb
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\obj\Debug\net7.0\ThreadTest.csproj.AssemblyReference.cache
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\obj\Debug\net7.0\ThreadTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\obj\Debug\net7.0\ThreadTest.AssemblyInfoInputs.cache
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\obj\Debug\net7.0\ThreadTest.AssemblyInfo.cs
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\obj\Debug\net7.0\ThreadTest.csproj.CoreCompileInputs.cache
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\obj\Debug\net7.0\ThreadTest.dll
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\obj\Debug\net7.0\refint\ThreadTest.dll
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\obj\Debug\net7.0\ThreadTest.pdb
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\obj\Debug\net7.0\ThreadTest.genruntimeconfig.cache
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\ThreadTest\obj\Debug\net7.0\ref\ThreadTest.dll
