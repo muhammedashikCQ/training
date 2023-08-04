@@ -77,7 +77,7 @@ public class StudentDetail
             cmd.Parameters.Add(paramClass);
             cmd.Parameters.Add(paramMark);
             cmd.Parameters.Add(paramReturn);
-            cmd.ExecuteScalar();
+            cmd.ExecuteNonQuery();
             int returnvalue = (int)paramReturn.Value;
             return returnvalue;
 
