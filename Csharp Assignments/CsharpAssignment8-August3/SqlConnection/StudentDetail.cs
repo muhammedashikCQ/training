@@ -32,7 +32,7 @@ public class StudentDetail
         con.Close();
         
     }
-    public int InsertStudentDetail(string name, string address, string std,double mark)
+    public int InsertStudentDetail(string name, string address, string std,float mark)
     {
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
@@ -63,7 +63,7 @@ public class StudentDetail
             SqlParameter paramMark = new SqlParameter();
             paramMark.ParameterName = "@Mark";
             paramMark.Value = mark;
-            paramMark.SqlDbType = System.Data.SqlDbType.VarChar;
+            paramMark.SqlDbType = System.Data.SqlDbType.Float;
             paramMark.Size = 10;
 
 
@@ -79,9 +79,12 @@ public class StudentDetail
             cmd.Parameters.Add(paramReturn);
             cmd.ExecuteNonQuery();
             int returnvalue = (int)paramReturn.Value;
-            return returnvalue;
+            
+             return returnvalue;
+        con.Close();
 
-            con.Close();
+
+
 
     }
   }
