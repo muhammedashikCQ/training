@@ -81,11 +81,13 @@ public class StudentDetail
             int returnvalue = (int)paramReturn.Value;
             
              return returnvalue;
-        con.Close();
+            con.Close();
+        Console.ReadLine();
 
 
 
 
     }
-  }
+   
+}
 

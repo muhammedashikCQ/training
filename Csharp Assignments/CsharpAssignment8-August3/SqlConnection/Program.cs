@@ -4,8 +4,7 @@
     {
         StudentDetail object1= new StudentDetail();
         object1.GetStudentDetail();
-        StudentDetail object2= new StudentDetail();
-        int result = object2.InsertStudentDetail("Asci", "Assads", "12V", 28);
+        int result = object1.InsertStudentDetail("fdf", "zdf", "12V", 2);
         Console.WriteLine(result);
     }
 }

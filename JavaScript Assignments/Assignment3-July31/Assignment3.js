@@ -37,13 +37,21 @@ function MyFunction()
       // 1.List the movie name along with the actor name of those movies released in the year 2022
   
 
-    Movies.forEach(element => {
+    // Movies.forEach(element => {
        
-        if(element.ReleaseDate.slice(0,4)==='2022')
+    //     if(element.ReleaseDate.slice(0,4)==='2022')
+    //     {
+    //         console.log(`${element.MovieName }: ${ element.ActorName}`)
+    //     }
+    //   });
+      const moviesDetail=Movies.filter(x=>
         {
-            console.log(`${element.MovieName }: ${ element.ActorName}`)
-        }
-      });
+            const movieyear=new Date(x.ReleaseDate);
+            return movieyear.getFullYear()==="2022";
+        })
+        const display=moviesDetail.map(n=>n.ActorName)
+      console.log(display);
+    //   Movies.filter(x=>x.ReleaseDate.new Date())
 
     // 2) List the movie names released in the year 2023 where the actor is William Davis.
 
