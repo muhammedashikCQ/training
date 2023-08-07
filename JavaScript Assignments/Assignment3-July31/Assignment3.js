@@ -36,40 +36,28 @@ function MyFunction()
 
       // 1.List the movie name along with the actor name of those movies released in the year 2022
   
-
-    // Movies.forEach(element => {
-       
-    //     if(element.ReleaseDate.slice(0,4)==='2022')
-    //     {
-    //         console.log(`${element.MovieName }: ${ element.ActorName}`)
-    //     }
-    //   });
       const moviesDetail=Movies.filter(x=>
         {
             const movieyear=new Date(x.ReleaseDate);
-            return movieyear.getFullYear()==="2022";
+            return movieyear.getFullYear()===2022;
         })
-        const display=moviesDetail.map(n=>n.ActorName)
-      console.log(display);
-    //   Movies.filter(x=>x.ReleaseDate.new Date())
+        const movieactor=moviesDetail.map(x=>({ActorName:x.ActorName,MovieName:x.MovieName}));
+      console.log(movieactor);
 
     // 2) List the movie names released in the year 2023 where the actor is William Davis.
 
-    Movies.forEach(element=>{
+    const movieactorvalue=Movies.filter(x=>{
+        const movieyearr=new Date(x.ReleaseDate);
+        return movieyearr.getFullYear()===2023})
+    const moviedetaill=movieactor.filter(x=>x.ActorName==="William Davis").map(x=>x.MovieName)
+    console.log(moviedetaill)
         
-        if(element.ReleaseDate.slice(0,4)==='2023' && element.ActorName==='William Davis')
-        {
-            console.log(`${element.MovieName}`)
-        }
-        })
-    
+    // const moviedetaill=movieactorvalue.filter(x=>x.ActorName==='William Davis');
+    console.log(movieactorvalue);
+
         //3) Retrieve the Actor name and release date of the movie “The Last Stand”
-    Movies.forEach(elements=>{
-        if(elements.MovieName==='The Last Stand')
-        {
-            console.log(`${elements.ActorName}, ${elements.ReleaseDate}`)
-        }
-    })
+        const detail2=Movies.filter(x=>x.MovieName==='The Last Stand').map(x=>({ActorName:x.ActorName,ReleaseDate:x.ReleaseDate}));
+        console.log(detail2)
 
     //4)Check whether there is any movie in the list with actor name “John Doe”
 
@@ -125,8 +113,8 @@ function MyFunction()
 
 //8) Create a new array starting from the movie "City of Shadows"
 
-let index1=Movies.findIndex(x=>x.MovieName==='City of Shadows')
-let NewArray1=Movies.slice(index)
+const index1=Movies.findIndex(x=>x.MovieName==='City of Shadows')
+let NewArray1=Movies.slice(index1)
 console.log(NewArray1)
 
 
@@ -203,8 +191,9 @@ console.log(NewArray1)
 //13 ) Check whether all the movies are released after 2021 Dec 31
 
 
-let CheckMovies=Movies.every(x=>x.ReleaseDate.slice(0,4)>'2021-12-31')
+let CheckMovies=Movies.every(x=>new Date(x.ReleaseDate).getFullYear()>'2021-12-31')
 console.log(`Whether all the movies are released after 2021 Dec 31 :${CheckMovies}`)
+
 
 
 //14) Update movie named  "City of Shadows" ‘s release date as  "2023-03-13"

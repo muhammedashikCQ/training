@@ -78,13 +78,10 @@ public class StudentDetail
             cmd.Parameters.Add(paramMark);
             cmd.Parameters.Add(paramReturn);
             cmd.ExecuteNonQuery();
-            int returnvalue = (int)paramReturn.Value;
-            
-             return returnvalue;
             con.Close();
-        Console.ReadLine();
-
-
+            int returnvalue = (int)paramReturn.Value;
+             return returnvalue;
+         
 
 
     }

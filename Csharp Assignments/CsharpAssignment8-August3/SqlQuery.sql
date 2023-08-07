@@ -53,6 +53,7 @@ SELECT * FROM Student
 ------Procedure for GetStudentDetails--
 GO 
 CREATE OR ALTER PROCEDURE GetStudentDetails
+
 AS
 BEGIN
 SELECT * FROM Student;
@@ -78,6 +79,7 @@ INSERT INTO Student(
 	@Class,
 	@Mark)
 	return @@Identity;
+
 END
 GO
 
