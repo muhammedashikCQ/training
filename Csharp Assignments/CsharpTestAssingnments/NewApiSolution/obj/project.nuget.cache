@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "OIBjGBD+gEpXm5X+EXGWLUiwkhp0Vl/2+u9wn8mT5wvtKEB57XqG0GHgOfz5jny64wljaLrvgS/196YJW4ChgA==",
+  "success": true,
+  "projectFilePath": "C:\\Repository\\training\\Csharp Assignments\\CsharpTestAssingnments\\NewApiSolution\\NewApiSolution.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

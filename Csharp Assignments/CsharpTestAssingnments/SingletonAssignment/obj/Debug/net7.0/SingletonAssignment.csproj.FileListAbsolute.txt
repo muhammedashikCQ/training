@@ -1,0 +1,15 @@
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\bin\Debug\net7.0\SingletonAssignment.exe
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\bin\Debug\net7.0\SingletonAssignment.deps.json
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\bin\Debug\net7.0\SingletonAssignment.runtimeconfig.json
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\bin\Debug\net7.0\SingletonAssignment.dll
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\bin\Debug\net7.0\SingletonAssignment.pdb
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\obj\Debug\net7.0\SingletonAssignment.csproj.AssemblyReference.cache
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\obj\Debug\net7.0\SingletonAssignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\obj\Debug\net7.0\SingletonAssignment.AssemblyInfoInputs.cache
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\obj\Debug\net7.0\SingletonAssignment.AssemblyInfo.cs
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\obj\Debug\net7.0\SingletonAssignment.csproj.CoreCompileInputs.cache
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\obj\Debug\net7.0\SingletonAssignment.dll
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\obj\Debug\net7.0\refint\SingletonAssignment.dll
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\obj\Debug\net7.0\SingletonAssignment.pdb
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\obj\Debug\net7.0\SingletonAssignment.genruntimeconfig.cache
+C:\Repository\training\Csharp Assignments\CsharpTestAssingnments\SingletonAssignment\obj\Debug\net7.0\ref\SingletonAssignment.dll
