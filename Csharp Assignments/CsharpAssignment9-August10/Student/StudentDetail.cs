@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using Azure.Core;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -97,6 +98,34 @@ namespace Student
             return returnvalue;
 
 
+
+        }
+        public List<Student> GetAllStudentDetail()
+        {
+            List<Student> students = new List<Student>();
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+            string query = "GetAllStudentDetail";
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = query;
+            cmd.Connection = con;
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            SqlDataReader reader = cmd.ExecuteReader();
+            
+             while(reader.Read())
+            {
+                Student returnObj = new Student();
+                returnObj.name = reader["Name"].ToString();
+                returnObj.address = reader["Address"].ToString();
+                returnObj.std = reader["class"].ToString();
+                returnObj.mark = (decimal)reader["Mark"];
+                returnObj.Id =(int) reader["Id"];
+                students.Add(returnObj);
+
+            }
+            return students;
+           
+            con.Close();
 
         }
 

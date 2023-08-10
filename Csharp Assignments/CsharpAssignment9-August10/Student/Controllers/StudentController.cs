@@ -25,9 +25,14 @@ namespace Student.Controllers
             var x = studentdetail.GetStudentDetail(id);
             return Ok(x);
         }
+        [HttpGet("GetDetail")]
+        public IActionResult GetAllDetail()
+        {
+            StudentDetail studentdetail = new StudentDetail();
+            return Ok(studentdetail.GetAllStudentDetail());
+        }
 
-       
-        
-     
+
+
     }
 }

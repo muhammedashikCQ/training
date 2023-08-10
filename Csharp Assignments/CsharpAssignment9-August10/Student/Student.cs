@@ -2,9 +2,9 @@ namespace Student
 {
     public class Student
     {
-        public string? name { get; set; }
-        public string? address { get; set; }
-        public string? std { get; set; }
+        public string name { get; set; } = string.Empty;
+        public string address { get; set; } = string.Empty; 
+        public string std { get; set; } = string.Empty; 
         public decimal mark { get; set; }
 
         public int Id { get; set; }
