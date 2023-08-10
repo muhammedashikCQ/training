@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "N3xS139HnXW0Lcstwkt8BCNg4RR6XH0HNpIwTTEVs8tnUFRu2zjM+uNaMJp1GGHcY8baM3aaSZ1O7qmjc/0YMQ==",
+  "dgSpecHash": "MMgHUZizlkWyR6E5hsRN6nRLsozKoGjEQNE/mHwSbWaiWiLQGbj8peqeegG85bkBF+rImIbX/5rGJ2KW8IsMQg==",
   "success": true,
   "projectFilePath": "C:\\Repository\\training\\Csharp Assignments\\CsharpTestAssingnments\\RepositoryPattern\\RepositoryPattern.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\stripe.net\\41.27.0\\stripe.net.41.27.0.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\CQ-Ashik\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

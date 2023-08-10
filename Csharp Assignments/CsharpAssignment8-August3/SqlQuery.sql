@@ -53,10 +53,10 @@ SELECT * FROM Student
 ------Procedure for GetStudentDetails--
 GO 
 CREATE OR ALTER PROCEDURE GetStudentDetails
-
+ @id INT
 AS
 BEGIN
-SELECT * FROM Student;
+SELECT * FROM Student WHERE Id=@id;
 END
 GO
 
@@ -66,7 +66,7 @@ CREATE OR ALTER PROCEDURE InsertNewStudent
 @Name VARCHAR(100),
 @Address VARCHAR(100),
 @Class VARCHAR(50),
-@Mark DECIMAL
+@Mark INT
 AS
 BEGIN
 INSERT INTO Student(
