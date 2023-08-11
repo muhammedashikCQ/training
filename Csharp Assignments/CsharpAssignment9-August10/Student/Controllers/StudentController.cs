@@ -32,7 +32,5 @@ namespace Student.Controllers
             return Ok(studentdetail.GetAllStudentDetail());
         }
 
-
-
     }
 }

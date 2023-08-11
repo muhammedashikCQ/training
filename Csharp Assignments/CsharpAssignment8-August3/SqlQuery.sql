@@ -60,13 +60,23 @@ SELECT * FROM Student WHERE Id=@id;
 END
 GO
 
+
+-----------------------------------
+
+GO 
+CREATE OR ALTER PROCEDURE GetAllStudentDetail
+AS
+BEGIN
+SELECT * FROM Student;
+END
+GO
 ----Procedure for Insert a student detail an get the identity--
 GO 
 CREATE OR ALTER PROCEDURE InsertNewStudent
 @Name VARCHAR(100),
 @Address VARCHAR(100),
 @Class VARCHAR(50),
-@Mark INT
+@Mark DECIMAL
 AS
 BEGIN
 INSERT INTO Student(
