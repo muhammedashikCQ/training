@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget
     return MaterialApp
     (
       title: 'Hello world App',
+      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromRGBO(2, 45, 12, 5))),
       debugShowCheckedModeBanner: false,
       home: Scaffold
       (
@@ -37,8 +38,7 @@ class MyApp extends StatelessWidget
               )
             ]
           ) 
-      ),
-
+        ),
       ),
     );
   }
