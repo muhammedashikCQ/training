@@ -12,9 +12,24 @@ class MyApp extends StatelessWidget
     return MaterialApp
     (
       title: 'Hello world App',
-      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromRGBO(2, 45, 12, 5))),
+      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(248, 12, 32, 17))),
       debugShowCheckedModeBanner: false,
-      home: Scaffold
+      home: const Homepage()
+    );
+  }
+}
+      
+      
+  class Homepage extends StatefulWidget {
+  const Homepage({super.key});
+  @override
+  State<Homepage> createState() => _HomepageState();
+}
+
+class _HomepageState extends State<Homepage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold
       (
         appBar: AppBar
         (          
@@ -39,8 +54,12 @@ class MyApp extends StatelessWidget
             ]
           ) 
         ),
-      ),
-    );
+      );
   }
 }
+      
+    
+      
+      
+      
 
