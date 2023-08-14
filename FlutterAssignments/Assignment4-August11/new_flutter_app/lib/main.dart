@@ -23,7 +23,8 @@ class MyApp extends StatelessWidget {
   }
 } 
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatelessWidget 
+{
   const HomePage({super.key});
 
   @override
@@ -40,13 +41,20 @@ class HomePage extends StatelessWidget {
          color: Colors.white,
          margin:const EdgeInsets.all(20),
          child:const Column
-        (children:
+        (mainAxisAlignment: MainAxisAlignment.center
+          
+          ,children:
           [
+            
+          Text(
 
-          Text('NewApp',
+                   
+          'NewApp',
           style: TextStyle(fontSize: 23,
           fontWeight: FontWeight.bold,color:Colors.red,
-          decoration: TextDecoration.underline )),
+          decoration: TextDecoration.underline ),
+          
+          ),
 
           SizedBox(height: 10),
           Text('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -68,19 +76,21 @@ class HomePage extends StatelessWidget {
           fontWeight: FontWeight.normal,color:Colors.blue,
           
           )),
+        
+
           
           
-
-
-
-
-
           ]
         )
+        
       )
+      
+      
     );
   }
 }
+
+
 
 
 
