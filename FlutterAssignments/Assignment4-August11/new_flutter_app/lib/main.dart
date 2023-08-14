@@ -41,14 +41,11 @@ class HomePage extends StatelessWidget
          color: Colors.white,
          margin:const EdgeInsets.all(20),
          child:const Column
-        (mainAxisAlignment: MainAxisAlignment.center
-          
+        (mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center
           ,children:
           [
-            
-          Text(
-
-                   
+          Text(       
           'NewApp',
           style: TextStyle(fontSize: 23,
           fontWeight: FontWeight.bold,color:Colors.red,
@@ -77,15 +74,10 @@ class HomePage extends StatelessWidget
           
           )),
         
-
-          
-          
           ]
         )
         
       )
-      
-      
     );
   }
 }
