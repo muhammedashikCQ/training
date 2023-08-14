@@ -39,88 +39,92 @@ class _MyHomePageState extends State<MyHomePage> {
         (
           margin: const EdgeInsets.fromLTRB(0, 50, 0, 0),
           padding:const EdgeInsets.all(10),
-          child: Column
-          (
-            children: 
-            [
-              
-               const CircleAvatar
-              ( 
-                radius:70,
-                backgroundImage:AssetImage('assets/images/as.jpg'
-                )
-              
-              ),
-              const SizedBox(height:10),
-              const Text("Name: Muhammed Ashik A",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold)),
-               const SizedBox(height:3),
-
-               InkWell(
-                onTap: (){
-                  print("muhammedashik@gmail.com");
-                },
-                child: const Text("Email Id : muhammedashik@gmail.com",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold)),
-               ),
-              
-              const SizedBox(height: 3),
-              const Text("Phone No: 9207801300",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold)),
-
-              const SizedBox(height: 50,),              
-              TextFormField
-              ( 
-                 decoration:  const InputDecoration
-                (
-                  border: OutlineInputBorder(borderSide: BorderSide(width: 10)),
-                  hintText: 'Enter Your Name',         
-                ),
-                
-                
-        
-                cursorColor:const Color.fromARGB(255, 0, 38, 255)
-              ),
-              
-              const SizedBox(height: 50,),
-             Container
-             (width: 200,height: 200,decoration: const BoxDecoration
-                (
-                  gradient: LinearGradient
-                  (
-                      begin:AlignmentDirectional.bottomEnd,
-                      end: AlignmentDirectional.bottomStart,     
-                      colors:[Colors.purple,Colors.white]
-                  ),
-                  borderRadius:BorderRadius.all(Radius.circular(50)),
-                  boxShadow:[BoxShadow(color: Colors.black,offset:Offset.zero,blurRadius: 10,blurStyle: BlurStyle.normal)]
-                ),
-                
-             ),
-
-            const SizedBox(height: 30,),         
-            SizedBox
+          child: SingleChildScrollView(
+            child: Column
             (
-              width: 400,
-              height: 50,
-               child: 
-               ElevatedButton
-                (
-                  child: 
-                  const Row
+              children: 
+              [
+                
+                 const CircleAvatar
+                ( 
+                  radius:70,
+                  backgroundImage:AssetImage('assets/images/as.jpg'
+                  )
+                
+                ),
+                const SizedBox(height:10),
+                const Text("Name: Muhammed Ashik A",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold)),
+                 const SizedBox(height:3),
+            
+                 InkWell(
+                  onTap: (){
+                    print("muhammedashik@gmail.com");
+                  },
+                  child: const Text("Email Id : muhammedashik@gmail.com",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold)),
+                 ),
+                
+                const SizedBox(height: 3),
+                const Text("Phone No: 9207801300",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold)),
+            
+                const SizedBox(height: 50,),              
+                TextFormField
+                ( 
+                   decoration:  const InputDecoration
                   (
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: 
-                    [
-                      Icon(Icons.access_alarm,size: 40),
-                      SizedBox(width: 10,),
-                      Text("Hello",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.cyan,fontSize: 20),),
-                    ],
+                    border: OutlineInputBorder(borderSide: BorderSide(width: 10)),
+                    hintText: 'Enter Your Name',         
                   ),
-                  onPressed: ()
-                  {
-                    print("Thank You");
-                  },  
-               )
-            )
-          ],
+                  
+                  
+                  
+                  cursorColor:const Color.fromARGB(255, 0, 38, 255)
+                ),
+                
+                const SizedBox(height: 50,),
+               Container
+               (width: 200,height: 200,decoration: const BoxDecoration
+                  (
+                    gradient: LinearGradient
+                    (
+                        begin:AlignmentDirectional.bottomEnd,
+                        end: AlignmentDirectional.bottomStart,     
+                        colors:[Colors.purple,Colors.white]
+                    ),
+                    borderRadius:BorderRadius.all(Radius.circular(50)),
+                    boxShadow:[BoxShadow(color: Colors.black,offset:Offset(5, 10),blurRadius: 10,blurStyle: BlurStyle.normal)]
+                  ),
+                  
+               ),
+            
+              const SizedBox(height: 30,),      
+              
+                 
+              SizedBox
+              (
+                width: 400,
+                height: 50,
+                 child: 
+                 ElevatedButton
+                  (
+                    child: 
+                    const Row
+                    (
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: 
+                      [
+                        Icon(Icons.access_alarm,size: 40),
+                        SizedBox(width: 10,),
+                        Text("Hello",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.cyan,fontSize: 20),),
+                      ],
+                    ),
+                    onPressed: ()
+                    {
+                      print("Thank You");
+                    },  
+                 )
+              )
+            ],
+            ),
           ) ,
         ),
       )
