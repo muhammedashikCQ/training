@@ -25,8 +25,6 @@ namespace EFProject1.Controllers
             course.courseName = cname;
             studentdb.Add(course);
             studentdb.SaveChanges();
-
-
         }
         
 
