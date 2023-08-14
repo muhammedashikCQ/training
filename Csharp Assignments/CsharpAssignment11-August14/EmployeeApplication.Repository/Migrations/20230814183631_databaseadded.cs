@@ -30,7 +30,7 @@ namespace EmployeeApplication.Repository.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LocationId = table.Column<int>(type: "int", nullable: false)
+                    LocationId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -39,8 +39,7 @@ namespace EmployeeApplication.Repository.Migrations
                         name: "FK_Department_Location_LocationId",
                         column: x => x.LocationId,
                         principalTable: "Location",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -53,7 +52,7 @@ namespace EmployeeApplication.Repository.Migrations
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EmailId = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DepartmentId = table.Column<int>(type: "int", nullable: false)
+                    DepartmentId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -62,8 +61,7 @@ namespace EmployeeApplication.Repository.Migrations
                         name: "FK_Employees_Department_DepartmentId",
                         column: x => x.DepartmentId,
                         principalTable: "Department",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(

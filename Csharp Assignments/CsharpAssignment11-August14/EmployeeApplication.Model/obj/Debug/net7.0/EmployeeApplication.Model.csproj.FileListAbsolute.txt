@@ -12,3 +12,17 @@ C:\Repository\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeAp
 C:\Repository\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.pdb
 C:\Repository\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.genruntimeconfig.cache
 C:\Repository\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\ref\EmployeeApplication.Model.dll
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\bin\Debug\net7.0\EmployeeApplication.Model.deps.json
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\bin\Debug\net7.0\EmployeeApplication.Model.runtimeconfig.json
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\bin\Debug\net7.0\EmployeeApplication.Model.dll
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\bin\Debug\net7.0\EmployeeApplication.Model.pdb
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.csproj.AssemblyReference.cache
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.AssemblyInfoInputs.cache
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.AssemblyInfo.cs
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.csproj.CoreCompileInputs.cache
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.dll
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\refint\EmployeeApplication.Model.dll
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.pdb
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\EmployeeApplication.Model.genruntimeconfig.cache
+D:\newrep11\training\Csharp Assignments\CsharpAssignment11-August14\EmployeeApplication.Model\obj\Debug\net7.0\ref\EmployeeApplication.Model.dll

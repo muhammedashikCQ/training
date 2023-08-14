@@ -54,17 +54,22 @@ namespace EmployeeManagement.Controller
 
         [HttpPut("UpdateTheDetail")]
 
-        public void put(Location location)
+        public void put(Location location,int id,string name)
         {
-           
-
+            var x = dbContext?.Location.Find(id);
+            x.Name = name;
+            dbContext?.SaveChanges();
         }
 
 
-  
-      
+        
+        
 
-      
-      
+
+
+
+
+
+
     }
 }
