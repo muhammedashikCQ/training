@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\EmployeeApplication.Model",
+    "\\EmployeeApplication.Model\\Models",
     "\\EmployeeApplication.Repository",
     "\\EmployeeManagment",
     "\\EmployeeManagment\\Controller"

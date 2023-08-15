@@ -20,10 +20,10 @@ namespace EmployeeManagement.Controller
 
         [HttpPost("AddLocation")]
 
-        public void post([FromBody] Location location)
+        public void post( Location location,string Name)
         {
           
-            
+            location.Name = Name;
             dbContext?.Add(location);
             dbContext?.SaveChanges();
         }
@@ -54,9 +54,10 @@ namespace EmployeeManagement.Controller
 
         [HttpPut("UpdateTheDetail")]
 
-        public void put([FromBody]Location location)
+        public void put(Location location, int id, string name)
         {
-            
+            var x = dbContext?.Location.Find(id);
+            x.Name = name;
             dbContext?.SaveChanges();
         }
 

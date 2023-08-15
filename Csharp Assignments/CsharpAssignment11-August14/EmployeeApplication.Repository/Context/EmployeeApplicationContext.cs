@@ -14,6 +14,6 @@ namespace EmployeeApplication.Repository.Context
 
         public DbSet<Location> Location { get; set; }
         public DbSet<Department> Department { get; set; }
-        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Employees> Employees { get; set; }
     }
 }
