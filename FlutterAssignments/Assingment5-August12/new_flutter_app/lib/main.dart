@@ -53,18 +53,38 @@ class _MyHomePageState extends State<MyHomePage> {
                 
                 ),
                 const SizedBox(height:10),
-                const Text("Name: Muhammed Ashik A",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold)),
+                
+                Container(
+                  height: 40,
+                  width: 300,
+                  padding: const EdgeInsets.all(10),
+                  decoration:  BoxDecoration(borderRadius: BorderRadius.circular(10),color: const Color.fromARGB(255, 252, 221, 255)),
+                  child: const Text("Name: Muhammed Ashik A",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold))),
                  const SizedBox(height:3),
-            
+                 
+                 Container(
+                  height: 40,
+                  width: 300,
+                  padding: const EdgeInsets.all(10),
+                  decoration:  BoxDecoration(borderRadius: BorderRadius.circular(10),color: const Color.fromARGB(255, 252, 221, 255)),
+                  child: 
                  InkWell(
                   onTap: (){
                     print("muhammedashik@gmail.com");
                   },
                   child: const Text("Email Id : muhammedashik@gmail.com",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold)),
-                 ),
-                
-                const SizedBox(height: 3),
-                const Text("Phone No: 9207801300",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold)),
+                 ),),
+                 const SizedBox(height:3),
+            
+
+                 
+                Container(
+                  height: 40,
+                  width: 300,
+                  padding: const EdgeInsets.all(10),
+                  decoration:  BoxDecoration(borderRadius: BorderRadius.circular(10),color: const Color.fromARGB(255, 252, 221, 255)),
+                  child: const Text("Phone No: 9207801300",style:TextStyle(fontStyle: FontStyle.italic,fontWeight: FontWeight.bold))),
+            
             
                 const SizedBox(height: 50,),              
                 TextFormField
@@ -74,11 +94,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     border: OutlineInputBorder(borderSide: BorderSide(width: 10)),
                     hintText: 'Enter Your Name',         
                   ),
-                  
-                  
-                  
-                  cursorColor:const Color.fromARGB(255, 0, 38, 255)
+                cursorColor:const Color.fromARGB(255, 0, 38, 255)
                 ),
+                
+
                 
                 const SizedBox(height: 50,),
                Container
