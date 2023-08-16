@@ -30,7 +30,7 @@ namespace EmployeeApplication.Repository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("LocationId")
+                    b.Property<int>("LocationId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -44,7 +44,7 @@ namespace EmployeeApplication.Repository.Migrations
                     b.ToTable("Department");
                 });
 
-            modelBuilder.Entity("EmployeeApplication.Model.Models.Employee", b =>
+            modelBuilder.Entity("EmployeeApplication.Model.Models.Employees", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -99,12 +99,14 @@ namespace EmployeeApplication.Repository.Migrations
                 {
                     b.HasOne("EmployeeApplication.Model.Models.Location", "Location")
                         .WithMany()
-                        .HasForeignKey("LocationId");
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Location");
                 });
 
-            modelBuilder.Entity("EmployeeApplication.Model.Models.Employee", b =>
+            modelBuilder.Entity("EmployeeApplication.Model.Models.Employees", b =>
                 {
                     b.HasOne("EmployeeApplication.Model.Models.Department", "Department")
                         .WithMany()

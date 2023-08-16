@@ -20,10 +20,10 @@ namespace EmployeeManagement.Controller
 
         [HttpPost("AddLocation")]
 
-        public void post( Location location,string Name)
+        public void post( Location location)
         {
           
-            location.Name = Name;
+      
             dbContext?.Add(location);
             dbContext?.SaveChanges();
         }

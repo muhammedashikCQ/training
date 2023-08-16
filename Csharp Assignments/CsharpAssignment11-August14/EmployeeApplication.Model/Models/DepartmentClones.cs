@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace EmployeeApplication.Model.Models
 {
-    public class Department
+    public class DepartmentClones
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public int LocationId { get; set; }
-        public Location? Location { get; set; }
     }
 }

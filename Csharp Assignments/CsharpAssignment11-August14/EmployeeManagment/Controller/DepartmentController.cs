@@ -7,7 +7,7 @@ namespace EmployeeManagement.Controller
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DepartmentController:ControllerBase
+    public class DepartmentController : ControllerBase
     {
 
 
@@ -20,14 +20,23 @@ namespace EmployeeManagement.Controller
 
         [HttpPost("AddDepartment")]
 
-        public void post(Department department,string name,int Locationid)
+        public void post(DepartmentClones department)
         {
 
-            department.Name = name;
-            department.Location = dbContext?.Location.Find(Locationid);
-            dbContext?.Add(department);
+
+            Department dept = new Department
+            {
+                Id = department.Id,
+                Name = department.Name,
+                LocationId = department.LocationId
+
+            };
+            dbContext?.Add(dept);
             dbContext?.SaveChanges();
         }
+
+
+
         [HttpDelete("DeleteEmployee")]
 
         public void delete(Department department, int id)
@@ -55,12 +64,11 @@ namespace EmployeeManagement.Controller
 
         [HttpPut("UpdateTheDetail")]
 
-        public void put(Department department,int id,string name,int locationid)
+        public void put(Department department, int id, string name, int locationid)
         {
             var x = dbContext?.Department.Find(id);
-            x.Name=name;
+            x.Name = name;
             dbContext?.SaveChanges();
         }
-
     }
 }
