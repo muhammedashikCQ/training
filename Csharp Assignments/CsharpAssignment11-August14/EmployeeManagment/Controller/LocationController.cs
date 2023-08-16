@@ -20,25 +20,26 @@ namespace EmployeeManagement.Controller
 
         [HttpPost("AddLocation")]
 
-        public void post( Location location)
+        public void post(string name )
         {
-          
-      
+
+            Location location=new Location();
+            location.Name = name;
             dbContext?.Add(location);
             dbContext?.SaveChanges();
         }
         [HttpDelete("Deletelocation")]
 
-        public void delete(Location location,int id)
+        public void delete(int id)
         {
-            
+            Location location =new Location();
             location.Id = id;
             dbContext?.Remove(location);
             dbContext?.SaveChanges();
         }
 
         [HttpGet("GetById")]
-        public IActionResult Get(Location location,int id)
+        public IActionResult Get(int id)
         {
            
             return Ok(dbContext?.Location.Find(id));
@@ -46,7 +47,7 @@ namespace EmployeeManagement.Controller
         }
 
         [HttpGet("GetAll")]
-        public IActionResult Get(Location location)
+        public IActionResult Get()
         {
 
             return Ok(dbContext?.Location);
@@ -54,22 +55,13 @@ namespace EmployeeManagement.Controller
 
         [HttpPut("UpdateTheDetail")]
 
-        public void put(Location location, int id, string name)
+        public void put(int id, string name)
         {
+            Location location = new Location();
             var x = dbContext?.Location.Find(id);
             x.Name = name;
             dbContext?.SaveChanges();
+
         }
-
-
-
-
-
-
-
-
-
-
-
     }
 }

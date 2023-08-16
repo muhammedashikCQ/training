@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace EmployeeApplication.Model.Models
 {
-    public class Employees
+    public class EmployeeClone
     {
-        public int Id { get; set; }
-        public string FirstName { get; set; }=string.Empty;
+        public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public string EmailId { get; set; } = string.Empty;
         public string PhoneNumber { get; set; } = string.Empty;
         public int DepartmentId { get; set; }
-        public Department? Department { get; set; }
-       
-
     }
 }

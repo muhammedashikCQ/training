@@ -24,39 +24,31 @@ namespace EmployeeManagement.Controller
         {
 
 
-            Department dept = new Department
-            {
-                Id = department.Id,
-                Name = department.Name,
-                LocationId = department.LocationId
-
-            };
+            Department dept = new Department();
+            dept.Name = department.Name;
+            dept.LocationId = department.LocationId;
             dbContext?.Add(dept);
             dbContext?.SaveChanges();
         }
 
+        [HttpDelete("DeleteDepartment")]
 
-
-        [HttpDelete("DeleteEmployee")]
-
-        public void delete(Department department, int id)
+        public void delete( int id)
         {
-
+            Department department = new Department();
             department.Id = id;
             dbContext?.Remove(department);
             dbContext?.SaveChanges();
         }
 
         [HttpGet("GetById")]
-        public IActionResult Get(Department department, int id)
+        public IActionResult Get(int id)
         {
-
             return Ok(dbContext?.Department.Find(id));
-
         }
 
         [HttpGet("GetAll")]
-        public IActionResult Get(Department department)
+        public IActionResult Get()
         {
 
             return Ok(dbContext?.Department);
@@ -64,10 +56,11 @@ namespace EmployeeManagement.Controller
 
         [HttpPut("UpdateTheDetail")]
 
-        public void put(Department department, int id, string name, int locationid)
+        public void put(DepartmentClones department,int id)
         {
             var x = dbContext?.Department.Find(id);
-            x.Name = name;
+            x.Name=department.Name;
+            x.LocationId=department.LocationId;
             dbContext?.SaveChanges();
         }
     }

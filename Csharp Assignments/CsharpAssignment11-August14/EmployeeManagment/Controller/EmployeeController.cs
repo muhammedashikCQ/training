@@ -1,8 +1,8 @@
 ﻿using EmployeeApplication.Model.Models;
 using EmployeeApplication.Repository.Context;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+
+
 namespace EmployeeManagement.Controller
 {
     [Route("api/[controller]")]
@@ -18,32 +18,35 @@ namespace EmployeeManagement.Controller
         }
 
         [HttpPost("AddEmployee")]
-        public void post(Employees employee,string name1, string name2,string phoneNumber,string mailId,int departmentId)
+        public void post(EmployeeClone emp)
         {
 
-            employee.FirstName = name1;
-            employee.LastName = name2;
-            employee.PhoneNumber = phoneNumber;
-            employee.EmailId = mailId;
-            employee.Department = dbContext?.Department.Find(departmentId);
+            Employees employee = new Employees();
+            employee.PhoneNumber = emp.PhoneNumber;
+            employee.FirstName = emp.FirstName;
+            employee.LastName = emp.LastName;
+            employee.EmailId = emp.EmailId;
+            employee.DepartmentId = emp.DepartmentId;
             dbContext?.Add(employee);
             dbContext?.SaveChanges();
         }
+    
         [HttpDelete("DeleteEmployee")]
 
-        public void delete(Employees employee, int id)
+        public void delete(int id)
         {
 
+            Employees employee = new Employees();
             employee.Id = id;
             dbContext?.Remove(employee);
             dbContext?.SaveChanges();
         }
 
         [HttpGet("GetById")]
-        public IActionResult Get(Employees employee, int id)
+        public IActionResult Get(int Id)
         {
 
-            return Ok(dbContext?.Employees.Find(id));
+            return Ok(dbContext?.Employees.Find(Id));
 
         }
 
@@ -56,13 +59,14 @@ namespace EmployeeManagement.Controller
 
         [HttpPut("UpdateTheDetail")]
 
-        public void put( Employees employee, int id, string name1,string name2, string phoneNumber, string mailId)
+        public void put( EmployeeClone emp,int id)
         {
             var x = dbContext?.Employees.Find(id);
-            x.FirstName = name1;
-            x.LastName = name2;
-            x.PhoneNumber = phoneNumber;
-            x.EmailId= mailId;
+            x.FirstName= emp.FirstName;
+            x.LastName= emp.LastName;
+            x.EmailId= emp.EmailId;
+            x.PhoneNumber= emp.PhoneNumber;
+            x.DepartmentId= emp.DepartmentId;
             dbContext?.SaveChanges();
         }
     }
