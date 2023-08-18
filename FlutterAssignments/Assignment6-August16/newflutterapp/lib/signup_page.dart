@@ -314,7 +314,7 @@ class _MyWidgetState extends State<MyWidget> {
                                       color: Color(0xff2954F1),
                                       fontSize: 22,
                                       fontWeight: FontWeight.w600,
-                                      fontStyle: FontStyle.normal,
+                                      fontStyle: FontStyle.normal, 
                                       letterSpacing: .66)),
                             ),
                           ),

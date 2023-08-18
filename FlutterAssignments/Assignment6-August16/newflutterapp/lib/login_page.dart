@@ -205,13 +205,13 @@ class _MyWidgetState extends State<LoginPage> {
                           child: TextButton(
                             onPressed: () {
                               if (usernameController.text==widget.name && passwordController.text==widget.password) {
-                                print("username$usernameController");
-                                print("password$passwordController");
+                                print("username: ${usernameController.text}");
+                                print("password: ${passwordController.text}");
                               } else {
-                                print("");
+                                print("Invalid credentials");
                               }
                             },
-                            child: Text(
+                            child: Text(                                                             
                               'LOGIN',
                               style: GoogleFonts.poppins(
                                   textStyle: const TextStyle(
