@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:newflutterapplication/about_page.dart';
 import 'package:newflutterapplication/cart_page.dart';
 import 'package:newflutterapplication/home_page.dart';
+import 'package:newflutterapplication/navbar.dart';
 
 class UserPage extends StatefulWidget {
   const UserPage({super.key});
@@ -326,12 +327,14 @@ class _UserPageState extends State<UserPage> {
           ),
         ),
       ),
-     bottomNavigationBar: BottomNavigationBar(
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),label: 'About'),
-            BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_checkout),label: 'MyCart')
-          ]), 
+    //  bottomNavigationBar: BottomNavigationBar(
+    //       items: const <BottomNavigationBarItem>[
+    //         BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Home'),
+    //         BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),label: 'About'),
+    //         BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_checkout),label: 'MyCart')
+    //       ]), 
+bottomNavigationBar:const  Navbar(),
+
     );
   }
 }

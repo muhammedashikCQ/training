@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:newflutterapplication/navbar.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -7,6 +8,9 @@ class CartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
      return Scaffold(
+      appBar: AppBar(leading:BackButton(onPressed: (){
+          Navigator.of(context).pop();
+      }, ),),
       body: Center(
         child: Text("Cart Page",
             style: GoogleFonts.poppins(
@@ -18,6 +22,9 @@ class CartPage extends StatelessWidget {
                   letterSpacing: .75),
             )),
       ),
+            bottomNavigationBar:  const Navbar()
+
     );
+    
   }
 }
