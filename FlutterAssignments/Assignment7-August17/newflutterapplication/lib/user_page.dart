@@ -17,15 +17,16 @@ class _UserPageState extends State<UserPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
         actions: [
           Container(
-            margin: const EdgeInsets.fromLTRB(0, 10, 30, 0),
+         
+            margin: const EdgeInsets.fromLTRB(0, 10, 20, 0),
             decoration: BoxDecoration(
                 border: Border.all(
-                    color: const Color.fromARGB(255, 36, 119, 39), width: 2),
-                borderRadius: BorderRadius.circular(50)),
+                    color: const Color.fromARGB(255, 13, 49, 14), width: 2),
+                borderRadius: BorderRadius.circular(100)),
             child: CircleAvatar(
+              backgroundColor: Colors.white,
               child: TextButton(
                 onPressed: () {
                   showDialog(
@@ -41,26 +42,38 @@ class _UserPageState extends State<UserPage> {
                                     fontStyle: FontStyle.normal,
                                     letterSpacing: .75),
                               )),
-                          content: SizedBox(
-                            height: 330,
-                            child: Column(
-                              children: [
-                                Image.asset(
-                                  'assets/images/action1.jpg',
-                                ),
-                                Text(
-                                  'Ashik',
-                                  style: GoogleFonts.poppins(
-                                      textStyle: const TextStyle(
-                                          fontWeight: FontWeight.w300,
-                                          fontSize: 15)),
-                                ),
-                                Text('Ashik@gmail.com',
+                          content: Container(
+                            decoration: const BoxDecoration(),
+                            height: 360,
+                            child: SingleChildScrollView(
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    'assets/images/action1.jpg',
+                                  ),
+                                  Text(
+                                    'Ashik',
                                     style: GoogleFonts.poppins(
                                         textStyle: const TextStyle(
                                             fontWeight: FontWeight.w300,
-                                            fontSize: 15)))
-                              ],
+                                            fontSize: 15)),
+                                  ),
+                                  Text('Ashik@gmail.com',
+                                      style: GoogleFonts.poppins(
+                                          textStyle: const TextStyle(
+                                              fontWeight: FontWeight.w300,
+                                              fontSize: 15))),
+                                  Container(
+                                    padding:
+                                        const EdgeInsets.fromLTRB(0, 0, 200, 0),
+                                    child: BackButton(
+                                      onPressed: () {
+                                        Navigator.of(context).pop();
+                                      },
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         );
@@ -68,6 +81,7 @@ class _UserPageState extends State<UserPage> {
                 },
                 child: Image.asset(
                   'assets/images/action1.jpg',
+                  fit: BoxFit.fill,
                 ),
               ),
             ),
@@ -127,7 +141,7 @@ class _UserPageState extends State<UserPage> {
                                                   letterSpacing: .75),
                                             )),
                                         content: SizedBox(
-                                          height: 330,
+                                          height: 360,
                                           child: Column(
                                             children: [
                                               Image.asset(
@@ -150,7 +164,17 @@ class _UserPageState extends State<UserPage> {
                                                                       .w300,
                                                               fontSize: 15,
                                                               color: Colors
-                                                                  .black)))
+                                                                  .black))),
+                                              Container(
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        0, 0, 200, 0),
+                                                child: BackButton(
+                                                  onPressed: () {
+                                                    Navigator.of(context).pop();
+                                                  },
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ),
@@ -250,7 +274,11 @@ class _UserPageState extends State<UserPage> {
         ),
       ),
       body: Center(
-        child: SizedBox(
+        child: Container(
+          decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/images/asqw.jpg"),
+                  fit: BoxFit.cover)),
           height: 700,
           child: SingleChildScrollView(
             child: Column(
@@ -262,14 +290,14 @@ class _UserPageState extends State<UserPage> {
                             textStyle: const TextStyle(
                                 fontWeight: FontWeight.w800,
                                 fontSize: 25,
-                                color: Color.fromARGB(255, 74, 148, 78),
+                                color: Color.fromARGB(255, 31, 65, 4),
                                 letterSpacing: 1)))),
                 const SizedBox(height: 10),
                 SizedBox(
                   width: 300,
                   height: 50,
                   child: TextField(
-                    cursorColor: const Color.fromARGB(255, 99, 177, 102),
+                    cursorColor: const Color.fromARGB(255, 255, 255, 255),
                     keyboardType: TextInputType.name,
                     decoration: InputDecoration(
                         suffixIcon: Padding(
@@ -280,7 +308,7 @@ class _UserPageState extends State<UserPage> {
                         hintText: 'Search',
                         hintStyle: GoogleFonts.poppins(
                             textStyle: const TextStyle(
-                                color: Color.fromARGB(255, 99, 177, 102),
+                                color: Color.fromARGB(255, 2, 26, 3),
                                 fontWeight: FontWeight.w400,
                                 fontSize: 12,
                                 letterSpacing: .36,
@@ -288,14 +316,14 @@ class _UserPageState extends State<UserPage> {
                         enabledBorder: OutlineInputBorder(
                           borderSide: const BorderSide(
                             width: 1,
-                            color: Color.fromARGB(255, 99, 177, 102),
+                            color: Color.fromARGB(255, 4, 49, 6),
                           ),
                           borderRadius: BorderRadius.circular(50),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(
                             width: 1,
-                            color: Color.fromARGB(255, 99, 177, 102),
+                            color: Color.fromARGB(255, 7, 61, 9),
                           ),
                           borderRadius: BorderRadius.circular(50),
                         ),
@@ -308,15 +336,14 @@ class _UserPageState extends State<UserPage> {
                 ),
                 Container(
                   margin: const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                  child: Row(
+                  child: Column(
                     children: [
-                      SizedBox(
-                        // decoration: BoxDecoration(boxShadow: box ),
-                        width: 300,
-                        height: 200,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(40),
-                          child: Image.asset('assets/images/plant2.jpg'),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(40),
+                        child: Image.asset(
+                          'assets/images/plant2.jpg',
+                          width: 300,
+                          height: 200,
                         ),
                       ),
                     ],
@@ -327,14 +354,13 @@ class _UserPageState extends State<UserPage> {
           ),
         ),
       ),
-    //  bottomNavigationBar: BottomNavigationBar(
-    //       items: const <BottomNavigationBarItem>[
-    //         BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Home'),
-    //         BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),label: 'About'),
-    //         BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_checkout),label: 'MyCart')
-    //       ]), 
-bottomNavigationBar:const  Navbar(),
-
+      //  bottomNavigationBar: BottomNavigationBar(
+      //       items: const <BottomNavigationBarItem>[
+      //         BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Home'),
+      //         BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),label: 'About'),
+      //         BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_checkout),label: 'MyCart')
+      //       ]),
+      bottomNavigationBar: const Navbar(),
     );
   }
 }
