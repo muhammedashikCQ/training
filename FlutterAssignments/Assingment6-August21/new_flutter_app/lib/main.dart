@@ -8,11 +8,10 @@ import 'home_page.dart';
 
 Future<void> main() async {
   runApp(const MyApp());
-   Directory document = await getApplicationDocumentsDirectory();
+  Directory document = await getApplicationDocumentsDirectory();
   Hive.init(document.path);
   await Hive.openBox<String>("demo");
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -32,4 +31,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 
