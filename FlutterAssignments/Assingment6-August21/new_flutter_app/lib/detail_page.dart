@@ -73,37 +73,6 @@ class _DetailPageState extends State<DetailPage> {
                         TextButton(
                             onPressed: () {
                               callNumber(widget.jsonresponse.phone!);
-                              //makingPhoneCall();
-                              // showDialog(
-                              //     context: context,
-                              //     builder: (BuildContext context) {
-                              //       return AlertDialog(
-                              //         title: Text("Phone Number",
-                              //             style: GoogleFonts.poppins(
-                              //               textStyle: const TextStyle(
-                              //                   color: Colors.black,
-                              //                   fontSize: 25,
-                              //                   fontWeight: FontWeight.bold,
-                              //                   fontStyle: FontStyle.normal,
-                              //                   letterSpacing: .75),
-                              //             )),
-                              //         content: SizedBox(
-                              //           height: 150,
-                              //           child: Column(
-                              //             children: [
-                              //               ClipOval(
-                              //                   child: Image.asset(
-                              //                 "assets/images/as.jpg",
-                              //                 width: 100,
-                              //                 height: 100,
-                              //               )),
-                              //               const SizedBox(height: 10,),
-                              //               Text(widget.jsonresponse.phone!,style: const TextStyle(fontWeight: FontWeight.bold),)
-                              //             ],
-                              //           ),
-                              //         ),
-                              //       );
-                              //});
                             },
                             child: SvgPicture.asset(
                               "assets/images/phone.svg",

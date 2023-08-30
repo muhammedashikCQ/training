@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'home_page.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const GetMaterialApp(home: Home()));
 
+class Controller extends GetxController
+{
+  var count = 0.obs;
+  increment() => count++;
+}
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -17,10 +21,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+                                                 useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const Home(),
     );
   }
+
 }
+
+
+
 

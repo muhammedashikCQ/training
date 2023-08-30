@@ -23,7 +23,6 @@ static Box<String> flutter = Hive.box<String>("demo");
     apiCall();
     super.initState();
   }
-
   List<SampleData>? jsonResponse;
   // String getname()
   // {
@@ -37,8 +36,7 @@ static Box<String> flutter = Hive.box<String>("demo");
       setState(() {
         jsonResponse = sampleDataFromJson(response.body);
         String name=jsonResponse![0].name!;
-        flutter.put("name",name);
-        
+        flutter.put("name",name);  
       });
     }
   }
