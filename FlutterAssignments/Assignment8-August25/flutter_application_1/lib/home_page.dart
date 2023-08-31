@@ -15,8 +15,8 @@ class Home extends StatelessWidget {
             child: ElevatedButton(
                 child: const Text("Go to Other"),
                 onPressed: () => Get.to(Other()))),
-        floatingActionButton: FloatingActionButton(
-            onPressed: c.increment, child: const Icon(Icons.add)));
+                floatingActionButton: FloatingActionButton(
+                onPressed: c.increment, child: const Icon(Icons.add)));
   }
 }
 
