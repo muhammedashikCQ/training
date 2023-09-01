@@ -20,7 +20,7 @@ class ApiClass{
 
    Future getsingleapicall(int postid) async{
     http.Response response = await http.get(Uri.parse(
-        "https://jsonplaceholder.typicode.com/posts/postid"));
+        "https://jsonplaceholder.typicode.com/posts/$postid"));
         print(response.statusCode);
     if (response.statusCode == 200) {
      return  getSingleFromJson(response.body);
@@ -30,7 +30,7 @@ class ApiClass{
 
   Future  getcommentsapicall(int postid ) async{
     http.Response response = await http.get(Uri.parse(
-        "https://jsonplaceholder.typicode.com/posts/postid/comments"));
+        "https://jsonplaceholder.typicode.com/posts/$postid/comments"));
         print(response.statusCode);
     if (response.statusCode == 200) {
      return  getCommentsFromJson(response.body);

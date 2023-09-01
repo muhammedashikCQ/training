@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:social_media_page/Models/get_comments.dart';
 import 'package:social_media_page/Services/apiclass.dart';
 
 import '../Models/get_all.dart';
@@ -6,6 +7,7 @@ import '../Models/get_all.dart';
 
 class GetAllController extends GetxController {
   RxList<GetAll> data = <GetAll>[].obs;
+  RxList<GetComments> comments = <GetComments>[].obs;
   RxBool isLoading = true.obs;
   void getallcontroller()async {
     isLoading(true);
@@ -13,4 +15,5 @@ class GetAllController extends GetxController {
     data(x);
     isLoading(false);
   }
+  
 }

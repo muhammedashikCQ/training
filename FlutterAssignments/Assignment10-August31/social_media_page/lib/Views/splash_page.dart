@@ -19,7 +19,7 @@ class _SplashPageState extends State<SplashPage> {
 
   _navigatetohome() async {
     await Future.delayed(
-      const Duration(milliseconds: 2000),
+      const Duration(milliseconds: 1500),
     );
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => const HomePage()));
@@ -30,7 +30,9 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
       body: Center(
         child:
-            SvgPicture.asset("assets/images/splashlogo1.svg",width: 100,height: 100,),
+            Container(
+              color: Colors.white,
+              child: SvgPicture.asset("assets/images/splashlogo1.svg",width: 100,height: 100,)),
       ),
     );
   }
