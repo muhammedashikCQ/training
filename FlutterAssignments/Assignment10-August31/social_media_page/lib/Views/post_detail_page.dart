@@ -4,9 +4,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:readmore/readmore.dart';
 
 import '../Controller/get_single_controller.dart';
+import 'update_post_page.dart';
 
 class PostDetailPage extends StatefulWidget {
   final int postid;
+  
   const PostDetailPage({super.key, required this.postid});
 
   @override
@@ -28,7 +30,13 @@ class _PostDetailPageState extends State<PostDetailPage> {
       () => controllergetsingle.isLoading.value
           ? const Center(child: CircularProgressIndicator())
           : Scaffold(
-            appBar: AppBar(leading: const BackButton(),actions:  const [Icon(Icons.edit,size: 25),]),
+            appBar: AppBar(leading: const BackButton(),actions:   [InkWell(             
+              child:  InkWell(child: const Icon(Icons.edit,size: 25,),
+              onTap: (){
+                 Get.to(UpdatePostPage(id:widget.postid,title:controllergetsingle.data.value.title!,body:controllergetsingle.data.value.body!));
+
+              },
+              )),]),
               body: SingleChildScrollView(
                 child: Container(
                   padding: const EdgeInsets.fromLTRB(20, 30, 20, 0),

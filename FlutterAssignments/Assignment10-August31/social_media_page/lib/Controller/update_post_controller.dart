@@ -6,7 +6,7 @@ import 'package:social_media_page/Services/apiclass.dart';
 
 
 class UpdatePostController extends GetxController {
-  RxList<UpdatePost> data = <UpdatePost>[].obs;
+  Rx<UpdatePost> data = UpdatePost().obs;
   
   RxBool isLoading = true.obs;
 

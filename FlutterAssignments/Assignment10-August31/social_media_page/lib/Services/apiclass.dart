@@ -51,7 +51,7 @@ class ApiClass{
 
 Future  updatepostapicall(int id) async{
     http.Response response = await http.get(Uri.parse(
-        "https://jsonplaceholder.typicode.com/posts/bookid"));
+        "https://jsonplaceholder.typicode.com/posts/$id"));
         print(response.statusCode);
     if (response.statusCode == 200) {
      return  updatePostFromJson(response.body);
