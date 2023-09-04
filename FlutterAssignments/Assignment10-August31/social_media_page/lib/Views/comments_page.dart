@@ -26,20 +26,36 @@ class _CommentsPageState extends State<CommentsPage> {
     return Obx(() => getCommentsController.isLoading.value
         ? const Center(child: CircularProgressIndicator())
         : Scaffold(
-          appBar: AppBar(leading: const BackButton(),title: Text("Comments",
-                    style: GoogleFonts.poppins(
-                        textStyle: const TextStyle(
-                            color: Colors.black,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w700,
-                            fontStyle: FontStyle.normal,
-                            letterSpacing: .75)),),),
+            appBar: AppBar(
+              flexibleSpace: Container(
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                      colors: [
+                        Color.fromARGB(255, 192, 145, 255),
+                        Color.fromARGB(255, 185, 215, 243),
+                        Colors.indigo
+                      ]),
+                ),
+              ),
+              leading: const BackButton(),
+              title: Text(
+                "Comments",
+                style: GoogleFonts.poppins(
+                    textStyle: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        fontStyle: FontStyle.normal,
+                        letterSpacing: .75)),
+              ),
+            ),
             backgroundColor: const Color.fromARGB(255, 247, 247, 247),
             body: Padding(
               padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
               child: Column(
                 children: [
-                  
                   Expanded(
                     child: ListView.builder(
                         itemCount: getCommentsController.data.length,
@@ -61,9 +77,9 @@ class _CommentsPageState extends State<CommentsPage> {
                                       children: [
                                         Row(
                                           children: [
-                                            CircleAvatar(
-                                                child: Image.asset(
-                                                    "assets/images/profilepicture1.png")),
+                                            const CircleAvatar(
+                                                  backgroundImage: AssetImage("assets/images/profilepicture1.png"),
+                                            ),
                                             const SizedBox(
                                               width: 20,
                                             ),
@@ -81,7 +97,6 @@ class _CommentsPageState extends State<CommentsPage> {
                                             ),
                                           ],
                                         ),
-                                        
                                         const SizedBox(
                                           height: 20,
                                         ),
@@ -102,10 +117,10 @@ class _CommentsPageState extends State<CommentsPage> {
                                                   fontWeight: FontWeight.w400,
                                                   letterSpacing: .75)),
                                         ),
-                                         const SizedBox(
-                                        height: 10,
-                                      ),
-                                      const Divider(),
+                                        const SizedBox(
+                                          height: 10,
+                                        ),
+                                        const Divider(),
                                         const SizedBox(
                                           height: 20,
                                         ),

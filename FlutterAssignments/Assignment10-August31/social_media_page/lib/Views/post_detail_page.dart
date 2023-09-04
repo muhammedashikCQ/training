@@ -8,7 +8,7 @@ import 'update_post_page.dart';
 
 class PostDetailPage extends StatefulWidget {
   final int postid;
-  
+
   const PostDetailPage({super.key, required this.postid});
 
   @override
@@ -30,13 +30,37 @@ class _PostDetailPageState extends State<PostDetailPage> {
       () => controllergetsingle.isLoading.value
           ? const Center(child: CircularProgressIndicator())
           : Scaffold(
-            appBar: AppBar(leading: const BackButton(),actions:   [InkWell(             
-              child:  InkWell(child: const Icon(Icons.edit,size: 25,),
-              onTap: (){
-                 Get.to(UpdatePostPage(id:widget.postid,title:controllergetsingle.data.value.title!,body:controllergetsingle.data.value.body!));
-
-              },
-              )),]),
+              appBar: AppBar(
+                  flexibleSpace: Container(
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                          begin: Alignment.centerLeft,
+                          end: Alignment.centerRight,
+                          colors: [
+                            Color.fromARGB(255, 192, 145, 255),
+                            Color.fromARGB(255, 185, 215, 243),
+                            Colors.indigo
+                          ]),
+                    ),
+                  ),
+                  backgroundColor: const Color.fromARGB(255, 195, 220, 240),
+                  leading: const BackButton(),
+                  actions: [
+                    InkWell(
+                        child: InkWell(
+                      child: const Icon(
+                        Icons.edit,
+                        color: Colors.black,
+                        size: 25,
+                      ),
+                      onTap: () {
+                        Get.to(UpdatePostPage(
+                            id: widget.postid,
+                            title: controllergetsingle.data.value.title!,
+                            body: controllergetsingle.data.value.body!));
+                      },
+                    )),
+                  ]),
               body: SingleChildScrollView(
                 child: Container(
                   padding: const EdgeInsets.fromLTRB(20, 30, 20, 0),
@@ -82,11 +106,11 @@ class _PostDetailPageState extends State<PostDetailPage> {
                       ),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(20),
-                        child: Image.asset("assets/images/dummyimage.jpg"),
+                        child: Image.asset("assets/images/dummy2.jpg"),
                       ),
-                      
-                      const SizedBox(height: 20,),
-                    
+                      const SizedBox(
+                        height: 20,
+                      ),
                       Container(
                         padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                         child: Row(

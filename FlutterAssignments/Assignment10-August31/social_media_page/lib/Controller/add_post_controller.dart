@@ -6,10 +6,11 @@ import '../Models/add_post.dart';
 class AddPostController extends GetxController {
   Rx<AddPost> data = AddPost().obs;
   RxBool isLoading = true.obs;
-  void controlleraddpost()async {
+  void controlleraddpost(String userid,String title,String body)async {
     isLoading(true);
-    var x = await ApiClass().addpostapicall();
+    var x = await ApiClass().addpostapicall(userid,title,body);
     data(x);
+    
     isLoading(false);
   }  
 }

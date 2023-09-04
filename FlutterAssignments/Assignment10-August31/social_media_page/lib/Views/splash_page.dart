@@ -29,10 +29,13 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child:
-            Container(
-              color: Colors.white,
-              child: SvgPicture.asset("assets/images/splashlogo1.svg",width: 100,height: 100,)),
+        child: Container(
+            color: Colors.white,
+            child: SvgPicture.asset(
+              "assets/images/splashlogo1.svg",
+              width: 100,
+              height: 100,
+            )),
       ),
     );
   }

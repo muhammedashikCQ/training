@@ -10,9 +10,9 @@ class UpdatePostController extends GetxController {
   
   RxBool isLoading = true.obs;
 
-  void updatepostcontroller(int postid)async {
+  void updatepostcontroller(int postid,String title,String body)async {
     isLoading(true);
-    var x = await ApiClass().updatepostapicall(postid);
+    var x = await ApiClass().updatepostapicall(postid,title,body);
     data(x);
     isLoading(false);
   }
