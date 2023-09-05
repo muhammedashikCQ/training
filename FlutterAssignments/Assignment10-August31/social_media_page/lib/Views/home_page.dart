@@ -90,8 +90,6 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                   ),
-
-                 
                 ],
               ),
               body: Column(
@@ -101,10 +99,12 @@ class _HomePageState extends State<HomePage> {
                   ),
                   SizedBox(
                     height: 85,
-                    
-                    child: SingleChildScrollView(
+                    child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                      child: Row(
+                      itemCount: 10,
+                     itemBuilder: (BuildContext context, int index) {
+
+                      return Row(
                         children: [
                           Container(
                             decoration: BoxDecoration(
@@ -123,188 +123,9 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                           ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color:
-                                      const Color.fromARGB(255, 137, 190, 233),
-                                  width: 5,
-                                )),
-                            width: 80,
-                            height: 80,
-                            child: const InkWell(
-                              child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/images/storyimage.jpg'),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color:
-                                      const Color.fromARGB(255, 137, 190, 233),
-                                  width: 5,
-                                )),
-                            width: 80,
-                            height: 80,
-                            child: const InkWell(
-                              child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/images/storyimage.jpg'),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color:
-                                      const Color.fromARGB(255, 137, 190, 233),
-                                  width: 5,
-                                )),
-                            width: 80,
-                            height: 80,
-                            child: const InkWell(
-                              child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/images/storyimage.jpg'),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color:
-                                      const Color.fromARGB(255, 137, 190, 233),
-                                  width: 5,
-                                )),
-                            width: 80,
-                            height: 80,
-                            child: const InkWell(
-                              child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/images/storyimage.jpg'),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color:
-                                      const Color.fromARGB(255, 137, 190, 233),
-                                  width: 5,
-                                )),
-                            width: 80,
-                            height: 80,
-                            child: const InkWell(
-                              child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/images/storyimage.jpg'),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color:
-                                      const Color.fromARGB(255, 137, 190, 233),
-                                  width: 5,
-                                )),
-                            width: 80,
-                            height: 80,
-                            child: const InkWell(
-                              child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/images/storyimage.jpg'),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color:
-                                      const Color.fromARGB(255, 137, 190, 233),
-                                  width: 5,
-                                )),
-                            width: 80,
-                            height: 80,
-                            child: const InkWell(
-                              child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/images/storyimage.jpg'),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color:
-                                      const Color.fromARGB(255, 137, 190, 233),
-                                  width: 5,
-                                )),
-                            width: 80,
-                            height: 80,
-                            child: const InkWell(
-                              child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/images/storyimage.jpg'),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(100),
-                                border: Border.all(
-                                  color:
-                                      const Color.fromARGB(255, 137, 190, 233),
-                                  width: 5,
-                                )),
-                            width: 80,
-                            height: 80,
-                            child: const InkWell(
-                              child: CircleAvatar(
-                                backgroundImage:
-                                    AssetImage('assets/images/storyimage.jpg'),
-                              ),
-                            ),
-                          ),
                         ],
-                      ),
+                      );
+                     }
                     ),
                   ),
                   const SizedBox(
