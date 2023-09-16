@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AshikRepository\\Training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Model\\EmployeeApplication.Model.csproj": {}
+    "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Model\\EmployeeApplication.Model.csproj": {}
   },
   "projects": {
-    "C:\\AshikRepository\\Training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Model\\EmployeeApplication.Model.csproj": {
+    "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Model\\EmployeeApplication.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AshikRepository\\Training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Model\\EmployeeApplication.Model.csproj",
+        "projectUniqueName": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Model\\EmployeeApplication.Model.csproj",
         "projectName": "EmployeeApplication.Model",
-        "projectPath": "C:\\AshikRepository\\Training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Model\\EmployeeApplication.Model.csproj",
+        "projectPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Model\\EmployeeApplication.Model.csproj",
         "packagesPath": "C:\\Users\\CQ-Ashik\\.nuget\\packages\\",
-        "outputPath": "C:\\AshikRepository\\Training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Model\\obj\\",
+        "outputPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CQ-Ashik\\AppData\\Roaming\\NuGet\\NuGet.Config",

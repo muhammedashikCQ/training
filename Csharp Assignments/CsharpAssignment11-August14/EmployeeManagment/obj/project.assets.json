@@ -3956,11 +3956,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AshikRepository\\Training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeManagment\\EmployeeManagment.csproj",
+      "projectUniqueName": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeManagment\\EmployeeManagment.csproj",
       "projectName": "EmployeeManagment",
-      "projectPath": "C:\\AshikRepository\\Training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeManagment\\EmployeeManagment.csproj",
+      "projectPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeManagment\\EmployeeManagment.csproj",
       "packagesPath": "C:\\Users\\CQ-Ashik\\.nuget\\packages\\",
-      "outputPath": "C:\\AshikRepository\\Training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeManagment\\obj\\",
+      "outputPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeManagment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CQ-Ashik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3978,8 +3978,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\AshikRepository\\Training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Repository\\EmployeeApplication.Repository.csproj": {
-              "projectPath": "C:\\AshikRepository\\Training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Repository\\EmployeeApplication.Repository.csproj"
+            "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Repository\\EmployeeApplication.Repository.csproj": {
+              "projectPath": "C:\\Repository\\training\\Csharp Assignments\\CsharpAssignment11-August14\\EmployeeApplication.Repository\\EmployeeApplication.Repository.csproj"
             }
           }
         }
