@@ -25,11 +25,7 @@ static Box<String> flutter = Hive.box<String>("demo");
   }
 
   List<SampleData>? jsonResponse;
-  // String getname()
-  // {
-  //   String name=jsonResponse![index!].name!;
-  //   return name;
-  // }
+
   void apiCall() async {
     Response response =
         await http.get(Uri.parse("https://jsonplaceholder.typicode.com/users"));
