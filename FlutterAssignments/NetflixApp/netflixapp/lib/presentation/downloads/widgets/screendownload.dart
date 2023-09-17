@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:netflixapp/application/downloads/downloads_bloc.dart';
 import 'package:netflixapp/core/constants/constants.dart';
 import 'package:netflixapp/presentation/widgets/app_bar_widget.dart';
 
 import '../../../core/colors/colors.dart';
 
 List imageList = [
-  "https://www.peakpx.com/en/hd-wallpaper-desktop-vpnih",
+  "https://cdn.pixabay.com/photo/2019/04/04/15/17/smartphone-4103051_1280.jpg",
   "https://www.peakpx.com/en/hd-wallpaper-desktop-kvoni",
   "https://www.peakpx.com/en/hd-wallpaper-desktop-kvxcp"
 ];
@@ -16,6 +18,11 @@ class ScreenDownload extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //       BlocProvider.of<DownloadsBloc>(context).add(const DownloadsEvent.getDownloadsImages());
+
+    // });
+     BlocProvider.of<DownloadsBloc>(context).add(const DownloadsEvent.getDownloadsImages());
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
         appBar: const PreferredSize(
@@ -70,21 +77,26 @@ class ScreenDownload extends StatelessWidget {
                 letterSpacing: .75,
               )),
             ),
-            Container(
-              width: 100,
-              height: 400,
-              color: Colors.white,
-              child: Stack(
-                children: [
-                  Center(
-                    child: CircleAvatar(
-                      backgroundColor: Colors.grey,
-                      radius: size.width * .3,
+            BlocBuilder<DownloadsBloc,DownloadState>(
+              builder:(context,state){
+              return Container(
+                width: 100,
+                height: 400,
+                color: Colors.white,
+                child: Stack(
+                  children: [
+                    Center(
+                      child: CircleAvatar(
+                        backgroundColor: Colors.grey,
+                        radius: size.width * .3,
+                      ),
                     ),
-                  ),
-                ],
-              ),
-            ),
+                    
+                    Image.network("state.downloads[0].PosterPath")
+                  ],
+                ),
+              );
+  }),
             MaterialButton(
               onPressed: () {},
               color: Colors.blue,
